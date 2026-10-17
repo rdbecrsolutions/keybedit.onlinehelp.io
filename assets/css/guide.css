@@ -51,6 +51,8 @@ p { margin: 12px 0; }
 .quick-links { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 26px 0; }
 .quick-links a { display: flex; justify-content: space-between; align-items: center; gap: 10px; background: white; border: 1px solid #e1cd93; padding: 16px; border-radius: 8px; text-decoration: none; font-size: 15px; font-weight: 700; color: #584300; }
 .quick-links a:hover { background: #ffefbb; }
+.install-button { display: inline-flex; align-items: center; gap: 12px; max-width: 100%; padding: 14px 20px; border-radius: 8px; background: #075b82; color: white; text-decoration: none; font-weight: 750; }
+.install-button:hover { background: #064666; text-decoration: underline; }
 .notice, .example { border-radius: 7px; padding: 15px 18px; margin: 22px 0; background: #edf5fa; border-left: 4px solid #3383a5; font-size: 16px; }
 .warning { background: #fff5dd; border-color: #bc7900; color: #614711; }
 .success { background: #edf7f0; border-color: #368152; color: #28513a; }
