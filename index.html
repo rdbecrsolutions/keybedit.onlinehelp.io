@@ -1,0 +1,794 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="La guida pratica di Keyb(ED)It!: collega la cassa, fai uno scontrino, gestisci pagamenti, resi e chiusura giornaliera.">
+  <meta name="theme-color" content="#343a40">
+  <title>Keyb(ED)It! | Guida per l'esercente</title>
+  <link rel="icon" type="image/png" href="assets/img/app-icon.png">
+  <link rel="apple-touch-icon" href="assets/img/app-icon.png">
+  <link rel="stylesheet" href="assets/css/guide.css">
+  <script src="assets/js/guide.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenuto">Vai alla guida</a>
+  <header class="header">
+    <a class="brand" href="#inizio"><img class="brand-mark" src="assets/img/app-icon.png" width="40" height="40" alt=""> Keyb(ED)It! <span class="brand-note">Guida utente</span></a>
+    <button class="menu-toggle" type="button" aria-controls="indice" aria-expanded="false" hidden>Menu</button>
+    <button class="print-button" type="button" hidden>Stampa guida</button>
+  </header>
+  <aside class="sidebar" id="indice" aria-label="Indice della guida">
+    <p class="nav-heading">LA TUA CASSA, A PORTATA DI MANO</p>
+    <div class="search" hidden>
+      <label for="cerca">Cerca nella guida</label>
+      <input id="cerca" type="search" placeholder="Es. reso, contanti, descrizione" autocomplete="off">
+      <p id="risultati" role="status" aria-live="polite"></p>
+    </div>
+    <nav aria-label="Argomenti">
+      <a href="#inizio">Da dove cominciare</a>
+      <a href="#collegamento">Collegare la cassa</a>
+      <a href="#schermata">Conoscere la schermata</a>
+      <a href="#impostazioni">Usare le barre laterali</a>
+      <a href="#fotocamera">Impostare la fotocamera</a>
+      <a href="#abbonamento">Abbonarsi e ripristinare acquisti</a>
+      <a href="#reparti-articoli">Liste Reparti e Articoli</a>
+      <a href="#ateco">Scegliere l'attivit&agrave; ATECO</a>
+      <a href="#clienti">Usare la lista Clienti</a>
+      <a href="#parlante">Fare uno scontrino parlante</a>
+      <a href="#lotteria">Inserire il codice lotteria</a>
+      <a href="#vendita">Fare uno scontrino</a>
+      <a href="#pagamenti">Incassare un pagamento</a>
+      <a href="#sconti">Sconti e omaggi</a>
+      <a href="#funzioni">Usare la lista Funzioni</a>
+      <a href="#sincronizzazione">Aggiornare le liste dalla cassa</a>
+      <a href="#correzioni">Correggere o annullare</a>
+      <a href="#resi">Fare un reso</a>
+      <a href="#chiusura">Chiudere la giornata</a>
+      <a href="#descrizioni">Cambiare una descrizione</a>
+      <a href="#acconti">Acconti e beni da consegnare</a>
+      <a href="#buoni-monouso">Buoni monouso</a>
+      <a href="#buoni-multiuso">Buoni multiuso</a>
+      <a href="#ticket">Ticket e buoni convenzionati</a>
+      <a href="#non-riscosso">Non riscosso e servizi</a>
+      <a href="#note-fiscali">Indicazioni fiscali e fonti</a>
+      <a href="#assistenza">Problemi e assistenza</a>
+    </nav>
+    <p class="sidebar-note">Le operazioni vengono eseguite sulla cassa collegata. Prima di confermare, leggi sempre il display.</p>
+  </aside>
+  <main id="contenuto">
+    <p class="breadcrumb">Keyb(ED)It! / Guida per l'esercente</p>
+    <section id="inizio" class="hero topic" aria-labelledby="titolo">
+      <p class="eyebrow">GUIDA PRATICA</p>
+      <h1 id="titolo">La cassa, dal tuo tablet o PC.</h1>
+      <p class="lead">Keyb(ED)It! ti permette di usare i tasti del registratore dal tuo dispositivo. Qui trovi i passaggi per le operazioni di ogni giorno, uno alla volta.</p>
+      <div class="quick-links">
+        <a href="#collegamento">1. Collega la cassa <span aria-hidden="true">&rarr;</span></a>
+        <a href="#vendita">2. Fai uno scontrino <span aria-hidden="true">&rarr;</span></a>
+        <a href="#chiusura">3. Chiudi la giornata <span aria-hidden="true">&rarr;</span></a>
+      </div>
+      <div class="notice warning"><strong>Non &egrave; una simulazione.</strong> Vendite, resi, annulli e chiusure agiscono sul registratore collegato. Non ripetere un'operazione solo per provare i pulsanti.</div>
+      <p class="small">Le schermate e i brevi filmati mostrano operazioni reali con SMARTY EVO, fatte dai tasti di Keyb(ED)It!. Nomi dei reparti, pagamenti e funzioni possono cambiare in base alla tua cassa. Le immagini sono ritagliate e gli identificativi sono oscurati. Tocca un'immagine per ingrandirla; nei video premi Riproduci e attiva le didascalie se ti sono utili. I passaggi sono spiegati anche nel testo.</p>
+      <p class="small">I filmati non hanno audio e le attese sono tagliate: sulla tua cassa attendi sempre il riscontro reale. Le vendite usate per queste riprese sono state annullate prima dell'incasso; non mostrano un pagamento concluso.</p>
+    </section>
+
+    <section id="collegamento" class="card topic" aria-labelledby="titolo-collegamento">
+      <p class="eyebrow">PRIMI PASSI</p>
+      <h2 id="titolo-collegamento">Collegare la cassa</h2>
+      <p>Accendi il registratore e controlla che abbia carta. Al primo utilizzo chiedi al tuo tecnico di predisporre il collegamento con Keyb(ED)It! e di indicarti la modalit&agrave; adatta.</p>
+      <div class="two-columns">
+        <div>
+          <h3>Con la rete del negozio (Wifi)</h3>
+          <ol>
+            <li>Collega il tablet o PC alla stessa rete della cassa.</li>
+            <li>Apri <strong>Impostazioni</strong> con il pulsante a ingranaggio.</li>
+            <li>Seleziona <strong>Wifi</strong>.</li>
+            <li>Premi <strong>Cerca</strong> oppure inserisci nei quattro riquadri l'indirizzo della tua cassa, fornito dal tecnico.</li>
+            <li>Controlla l'indirizzo e premi <strong>Connetti</strong> una sola volta.</li>
+            <li>Attendi <strong>Connesso</strong> e il completamento del caricamento. Poi premi <strong>Chiudi</strong> per tornare alla tastiera.</li>
+          </ol>
+          <p class="notice">L'indirizzo nell'immagine &egrave; solo un esempio: usa quello della tua cassa.</p>
+        </div>
+        <figure>
+          <a class="zoom" href="assets/img/connessione-wifi.png"><img src="assets/img/connessione-wifi.png" width="855" height="337" alt="Impostazioni Wifi: indirizzo della cassa, Cerca e Connetti." loading="lazy"></a>
+          <figcaption>Impostazioni di collegamento su Windows.</figcaption>
+        </figure>
+      </div>
+      <h3>Con Bluetooth</h3>
+      <ol>
+        <li>Verifica con il tecnico che la cassa e il tuo dispositivo supportino questo collegamento.</li>
+        <li>Attiva il Bluetooth sul dispositivo e resta vicino alla cassa.</li>
+        <li>In <strong>Impostazioni</strong> scegli <strong>Bluetooth</strong>, poi <strong>Scansiona</strong>.</li>
+        <li>Consenti le autorizzazioni richieste dal dispositivo, seleziona la tua cassa e premi <strong>Connetti</strong>.</li>
+        <li>Attendi che il caricamento sia terminato prima di usare i tasti.</li>
+      </ol>
+      <details>
+        <summary>Collegamento con cavo su Windows</summary>
+        <p>Usa un cavo e una porta predisposti dal tecnico. Seleziona <strong>Seriale</strong> nelle Impostazioni, premi <strong>Aggiorna</strong>, scegli la porta COM indicata dal tecnico e premi <strong>Connetti</strong>. Non scegliere una porta a caso.</p>
+      </details>
+      <figure class="compact">
+        <a class="zoom" href="assets/img/modalita-collegamento.png"><img src="assets/img/modalita-collegamento.png" width="690" height="370" alt="Scelta della modalit&agrave; di collegamento: Wifi, Bluetooth o Seriale." loading="lazy"></a>
+        <figcaption>Apri il selettore per scegliere il tipo di collegamento.</figcaption>
+      </figure>
+      <div class="notice success"><strong>Prima di vendere:</strong> verifica <strong>Connesso</strong>, <strong>Cassa: Pronta</strong> e <strong>Documento: Chiuso</strong>. Se ci sono pi&ugrave; registratori, controlla anche modello e matricola.</div>
+    </section>
+
+    <section id="schermata" class="card topic" aria-labelledby="titolo-schermata">
+      <p class="eyebrow">ORIENTARSI</p>
+      <h2 id="titolo-schermata">Conoscere la schermata</h2>
+      <figure>
+        <a class="zoom" href="assets/img/tastiera-cassa.png"><img src="assets/img/tastiera-cassa.png" width="1280" height="800" alt="Schermata di Keyb(ED)It!: stato in alto, menu a sinistra, display e tastiera della cassa." loading="lazy"></a>
+        <figcaption>La tastiera principale, con la cassa pronta e il documento chiuso.</figcaption>
+      </figure>
+      <dl class="definitions">
+        <dt>Barra in alto</dt><dd>Indica quale cassa stai usando, il collegamento e lo stato del documento.</dd>
+        <dt>Display nero</dt><dd>Mostra messaggi, richieste e importi della cassa. Leggilo dopo ogni comando.</dd>
+        <dt>Menu a sinistra</dt><dd>Apre le <a href="#impostazioni">barre laterali</a> con Impostazioni, Reparti, Ateco, Articoli, Pagamenti, Modificatori, Funzioni e Clienti. In fondo trovi Help e Assistenza online.</dd>
+        <dt>Liste</dt><dd>Scorri per trovare una voce. Il pulsante con la freccia circolare aggiorna le liste disponibili dalla cassa. Toccare un reparto, articolo o pagamento pu&ograve; eseguire subito l'operazione: non &egrave; una semplice anteprima.</dd>
+        <dt>Tastiera colorata</dt><dd>Riproduce i tasti del registratore: numeri, reparti, pagamenti e comandi.</dd>
+        <dt>Frecce e MENU</dt><dd>Servono per muoversi e confermare nelle schermate della cassa. <strong>MENU</strong> e <strong>ESEGUI</strong> sono pulsanti distinti: segui quello richiesto dalla procedura e dal display.</dd>
+        <dt>Inserisci testo</dt><dd>Serve per inviare una descrizione o un dato quando il registratore lo richiede. Non usarlo per battere prezzi o impartire sequenze di tasti.</dd>
+      </dl>
+      <p class="notice">Sul tablet, se una lista aperta toglie spazio alla tastiera, richiudila o riduci il menu. Prima di confermare assicurati di vedere il display e il pulsante desiderato.</p>
+      <h3>Leggere un articolo con la fotocamera</h3>
+      <p>La fotocamera pu&ograve; leggere i codici dei prodotti predisposti sulla cassa. Prima di usarla, segui la <a href="#fotocamera">configurazione della fotocamera</a>: l'invio dalla schermata di vendita &egrave; automatico.</p>
+    </section>
+
+    <section id="impostazioni" class="card topic" aria-labelledby="titolo-impostazioni">
+      <p class="eyebrow">IL MENU DELL'APP</p>
+      <h2 id="titolo-impostazioni">Usare le barre laterali</h2>
+      <p>Le barre laterali sono i pannelli che si aprono accanto alla tastiera. Tocca il pulsante in alto nel menu per espandere o ridurre i nomi delle voci. Se una lista &egrave; gi&agrave; aperta, lo stesso pulsante la richiude; per richiuderla puoi anche toccare di nuovo la sua voce.</p>
+      <dl class="definitions">
+        <dt>Impostazioni</dt><dd>Il pulsante a ingranaggio apre collegamento, abbonamento, segnalazione di problemi e regolazioni della fotocamera. Scorri il pannello per raggiungere i riquadri pi&ugrave; in basso. Premi <strong>Chiudi</strong> o di nuovo l'ingranaggio per tornare alla tastiera.</dd>
+        <dt>Reparti</dt><dd>Mostra i reparti della cassa con le indicazioni IVA disponibili. Dopo aver digitato un prezzo, toccare una voce registra la vendita su quel reparto.</dd>
+        <dt>Ateco</dt><dd>Seleziona una delle attivit&agrave; gi&agrave; predisposte nel registratore. Non serve per creare o cambiare la tua attivit&agrave; fiscale.</dd>
+        <dt>Articoli</dt><dd>Mostra i prodotti memorizzati nella cassa. Il titolo della lista pu&ograve; essere <strong>PLU</strong>. Toccare un prodotto ne richiama la vendita.</dd>
+        <dt>Pagamenti</dt><dd>Mostra le modalit&agrave; di incasso disponibili e le relative indicazioni. Toccare una voce pu&ograve; chiudere subito il documento.</dd>
+        <dt>Modificatori</dt><dd>Applica una correzione, uno sconto, una maggiorazione o un'altra operazione prevista dalla cassa. Non &egrave; un elenco di prodotti.</dd>
+        <dt>Funzioni</dt><dd>Richiama letture, chiusure, resi, annulli e programmazioni. Prima dell'invio compare una conferma con il nome della funzione.</dd>
+        <dt>Clienti</dt><dd>Richiama un'anagrafica gi&agrave; memorizzata nel registratore. &Egrave; diverso dal tasto <strong>CLIENTE</strong> sulla tastiera, usato anche per inserire un codice fiscale o lotteria.</dd>
+        <dt>Help</dt><dd>Il libro aperto riapre questa guida nel browser. Non avvia una conversazione con un operatore.</dd>
+        <dt>Assistenza online</dt><dd>Apre il canale di assistenza esterno. Usalo quando serve l'intervento di un operatore, non per confermare operazioni sulla cassa.</dd>
+      </dl>
+      <div class="notice warning"><strong>Scorrere e scegliere sono due azioni diverse.</strong> Trascina la lista per cercare, poi solleva il dito e tocca una sola volta la voce desiderata. Reparti, articoli, clienti, ATECO, pagamenti e modificatori non hanno la stessa conferma preventiva delle Funzioni: leggi il display dopo ogni selezione.</div>
+      <h3>Che cosa trovi nelle Impostazioni</h3>
+      <ul>
+        <li><strong>Modalita connessione:</strong> per <a href="#collegamento">collegare o scollegare la cassa</a>. Non cambiare collegamento durante una vendita.</li>
+        <li><strong>Dispositivo ECR:</strong> quando disponibile, mostra matricola e modello. Serve a controllare che il registratore sia quello giusto, non a modificarne i dati.</li>
+        <li><strong>Abbonamento:</strong> per <a href="#abbonamento">scegliere un piano o ripristinare un acquisto</a>.</li>
+        <li><strong>Segnala un problema:</strong> per descrivere una difficolt&agrave; e preparare una segnalazione all'assistenza.</li>
+        <li><strong>Fotocamera:</strong> per <a href="#fotocamera">scegliere la camera e regolare l'immagine</a>.</li>
+      </ul>
+      <p>Finch&eacute; le Impostazioni sono aperte, la tastiera di vendita non &egrave; utilizzabile e la scansione della schermata principale viene sospesa. Chiudendo il pannello pu&ograve; riattivarsi se prima era accesa: prima di tornare alla vendita allontana dall'obiettivo i codici che non vuoi leggere.</p>
+    </section>
+
+    <section id="fotocamera" class="card topic" aria-labelledby="titolo-fotocamera">
+      <p class="eyebrow">LETTURA DEI CODICI</p>
+      <h2 id="titolo-fotocamera">Impostare e usare la fotocamera</h2>
+      <p>Le regolazioni di orientamento descritte qui si riferiscono all'anteprima del tablet Android. Su PC l'immagine dipende anche dalla webcam e dalle impostazioni del dispositivo.</p>
+      <h3>Regolarla la prima volta</h3>
+      <ol>
+        <li>Apri <strong>Impostazioni</strong> e scorri fino al riquadro <strong>Fotocamera</strong>.</li>
+        <li>Se &egrave; spenta, tocca il pulsante con il simbolo di accensione. Sul dispositivo consenti l'accesso alla fotocamera quando viene richiesto.</li>
+        <li>Con <strong>Camera</strong> passa fra frontale e posteriore, se entrambe disponibili. Scegli quella comoda per inquadrare il prodotto; un PC con una sola camera potrebbe non consentire il cambio.</li>
+        <li>Se l'immagine &egrave; di lato, premi <strong>Ruota</strong>: ogni tocco la gira di un quarto di giro.</li>
+        <li>Se l'immagine risulta specchiata, usa <strong>Mirror</strong> per attivare o togliere l'effetto specchio.</li>
+        <li>Le regolazioni vengono memorizzate mentre le cambi, separatamente per le due camere. Non devi cercare un pulsante Salva.</li>
+        <li>Chiudi le Impostazioni e controlla l'anteprima nella schermata principale.</li>
+      </ol>
+      <p class="notice success"><strong>Puoi regolare l'immagine senza battere articoli.</strong> Nel riquadro Fotocamera delle Impostazioni la lettura dei codici &egrave; disattivata. Nella schermata principale, invece, i codici letti vengono inviati alla cassa.</p>
+      <figure class="compact">
+        <a class="zoom" href="assets/img/fotocamera-comandi.png"><img src="assets/img/fotocamera-comandi.png" width="720" height="310" alt="Riquadro Fotocamera nelle Impostazioni con Camera, Ruota, Mirror, occhio e accensione. La camera &egrave; spenta." loading="lazy"></a>
+        <figcaption>I comandi della fotocamera, fotografati sul tablet. L'anteprima &egrave; spenta per non mostrare persone o il negozio.</figcaption>
+      </figure>
+      <div class="example"><strong>Esempio: il codice si vede sottosopra.</strong> Nelle Impostazioni accendi la camera e inquadra un oggetto senza codici o dati personali. Premi Ruota due volte se l'immagine &egrave; capovolta, una volta se &egrave; girata di un quarto di giro; ricontrolla dopo ogni tocco. Se cambi da frontale a posteriore, verifica nuovamente: ciascuna conserva la propria regolazione. Per interrompere davvero la lettura nella tastiera usa l'accensione, non l'occhio.</div>
+      <h3>Riconoscere i pulsanti</h3>
+      <dl class="definitions">
+        <dt>Simbolo di accensione</dt><dd>Accende o spegne fotocamera e scansione. Il pulsante verde invita ad accendere; quello rosso invita a spegnere.</dd>
+        <dt>Simbolo dell'occhio</dt><dd>Mostra o nasconde soltanto l'anteprima. <strong>La lettura continua anche con l'immagine nascosta.</strong></dd>
+        <dt>Camera, Ruota, Mirror</dt><dd>Sono le regolazioni disponibili nel pannello Impostazioni, non i comandi per registrare una vendita.</dd>
+      </dl>
+      <h3>Leggere un prodotto durante la vendita</h3>
+      <ol>
+        <li>Controlla collegamento e stato del documento. Il prodotto deve essere gi&agrave; memorizzato sulla cassa con il suo codice.</li>
+        <li>Accendi la fotocamera nella schermata principale e mostra l'anteprima con l'occhio, se serve.</li>
+        <li>Inquadra un solo codice, con buona luce, mantenendo il dispositivo fermo per un istante.</li>
+        <li>Alla lettura, allontana il codice e verifica sul display descrizione, prezzo e quantit&agrave;. Non devi premere INVIA per la scansione automatica.</li>
+        <li>Passa al prodotto successivo soltanto dopo il riscontro. Per smettere di leggere usa il pulsante di accensione, non l'occhio.</li>
+      </ol>
+      <div class="notice warning">Non lasciare lo stesso codice davanti all'obiettivo: potrebbe essere registrato di nuovo. Non puntare la camera su documenti o codici personali mentre &egrave; attiva la vendita. Se la cassa rifiuta un articolo, non continuare a ripresentarlo.</div>
+      <details>
+        <summary>Non vedo l'immagine o ho negato il permesso</summary>
+        <p>Controlla che la camera sia accesa e l'anteprima non sia nascosta. Su Android apri le impostazioni del dispositivo, cerca Keyb(ED)It! fra le app e abilita l'autorizzazione Fotocamera, poi torna all'app. Su PC controlla le autorizzazioni della camera e che un'altra applicazione non la stia usando. Se compare un errore, annotalo e contatta l'assistenza.</p>
+      </details>
+    </section>
+
+    <section id="abbonamento" class="card topic" aria-labelledby="titolo-abbonamento">
+      <p class="eyebrow">PIANO DELL'APP</p>
+      <h2 id="titolo-abbonamento">Abbonarsi e ripristinare gli acquisti</h2>
+      <p>Nell'app Android i pagamenti della cassa richiedono un abbonamento attivo. La sottoscrizione si acquista con Google Play: <strong>non &egrave; il pagamento di uno scontrino del negozio</strong>. Il piano mensile o annuale riguarda l'utilizzo dell'app.</p>
+      <h3>Sottoscrivere un piano</h3>
+      <ol>
+        <li>Controlla la connessione Internet del tablet e l'account con cui usi Google Play.</li>
+        <li>Apri <strong>Impostazioni &rarr; Abbonamento</strong>. Attendi la verifica: se un piano &egrave; gi&agrave; attivo, non acquistarne un altro per tentativi.</li>
+        <li>Scegli <strong>Mensile</strong> oppure <strong>Annuale</strong>. Leggi il prezzo mostrato e le condizioni della finestra di Google Play, comprese durata e rinnovo.</li>
+        <li>Conferma l'acquisto nella finestra Google Play solo se vuoi sottoscriverlo. Se rinunci, annulla quella finestra.</li>
+        <li>Torna all'app e attendi la comparsa di <strong>Piano mensile attivo</strong> oppure <strong>Piano annuale attivo</strong>. Poi chiudi le Impostazioni.</li>
+      </ol>
+      <p>Acquisto e ripristino tramite Google Play sono disponibili nell'app Android, non nei pulsanti della versione PC. Se i piani non sono disponibili o i pulsanti restano inattivi, verifica Internet e Google Play e chiedi assistenza: non ripetere acquisti.</p>
+      <h3>Ho gi&agrave; pagato, ma il piano non risulta attivo</h3>
+      <figure class="compact">
+        <a class="zoom" href="assets/img/abbonamento-ripristino.png"><img src="assets/img/abbonamento-ripristino.png" width="720" height="314" alt="Riquadro Abbonamento: nessun abbonamento attivo, scelta mensile o annuale e Ripristina acquisti." loading="lazy"></a>
+        <figcaption>Controlla il risultato scritto sopra ai pulsanti. Prezzi e condizioni nell'immagine sono un esempio: fanno fede quelli mostrati da Google Play al momento dell'acquisto.</figcaption>
+      </figure>
+      <ol>
+        <li>Usa su Google Play lo <strong>stesso account dell'acquisto</strong> e verifica che la sottoscrizione sia ancora attiva.</li>
+        <li>In <strong>Impostazioni &rarr; Abbonamento</strong> premi <strong>Ripristina acquisti</strong> una volta e attendi l'aggiornamento.</li>
+        <li>Ricontrolla il piano indicato nell'app. La scritta <strong>Ripristino acquisti avviato</strong> indica soltanto l'avvio della verifica, non la conferma del piano.</li>
+        <li>Se il piano continua a mancare o i pagamenti restano bloccati, contatta l'assistenza con il messaggio visualizzato. Non emettere uno scontrino soltanto per provare se l'abbonamento funziona.</li>
+      </ol>
+      <h3>Controllare il rinnovo o annullarlo</h3>
+      <p>Gestisci la sottoscrizione nella sezione <a href="https://play.google.com/store/account/subscriptions" target="_blank" rel="noopener noreferrer">Abbonamenti di Google Play</a>, con l'account che ha effettuato l'acquisto. Controlla l&igrave; rinnovo e scadenza e segui le opzioni disponibili. Disinstallare l'app o disconnettere la cassa non annulla l'abbonamento. <strong>Ripristina acquisti</strong> non serve ad annullarlo n&eacute; a richiedere un rimborso.</p>
+    </section>
+
+    <section id="reparti-articoli" class="card topic" aria-labelledby="titolo-reparti-articoli">
+      <p class="eyebrow">SCEGLIERE COSA VENDERE</p>
+      <h2 id="titolo-reparti-articoli">Liste Reparti e Articoli</h2>
+      <h3>Reparti: importo e categoria corretta</h3>
+      <p>Apri <strong>Reparti</strong>, scorri e leggi nome e indicazione IVA. Digita il prezzo con i tasti numerici della cassa, poi tocca il reparto una volta. La selezione registra la riga: controlla il display prima di passare al prodotto successivo. Non scegliere una voce soltanto perch&eacute; il nome sembra simile.</p>
+      <p>I tasti reparto della tastiera e la lista sono due modi per richiamare i reparti; la lista aiuta quando quelli che cerchi non compaiono sui tasti visibili. Per modificare un nome segui <a href="#descrizioni">la procedura dedicata</a>: non si modifica toccandolo nella lista.</p>
+      <figure>
+        <a class="zoom" href="assets/img/reparti-aggiornati.png"><img src="assets/img/reparti-aggiornati.png" width="1280" height="800" alt="Pannello REPARTI aggiornato con nomi, indicazioni IVA e pulsante circolare in alto a destra." loading="lazy"></a>
+        <figcaption>Controlla nome e IVA prima di toccare una voce. La freccia circolare aggiorna la lista: non registra una vendita.</figcaption>
+      </figure>
+      <div class="example"><strong>Esempio: vendita da 5,00 euro da una lista.</strong> Apri Reparti, individua la categoria corretta, tocca <kbd>5</kbd> <kbd>0</kbd> <kbd>0</kbd> sulla tastiera della cassa e poi il nome del reparto nella lista. Attendi la riga da 5,00 euro sul display. Non aggiungere anche un tocco sul tasto reparto colorato: sarebbe un'altra registrazione.</div>
+      <h3>Articoli: prodotti gi&agrave; memorizzati</h3>
+      <ol>
+        <li>Apri <strong>Articoli</strong>. Il pannello pu&ograve; avere il titolo <strong>PLU</strong>.</li>
+        <li>Trova il prodotto e controlla il nome e l'eventuale informazione sul reparto associato.</li>
+        <li>Toccalo una sola volta e attendi il riscontro sulla cassa.</li>
+        <li>Verifica il prezzo effettivamente registrato. Se viene chiesto un importo o segnalato un errore, segui la richiesta senza ripetere il tocco.</li>
+      </ol>
+      <p>La lista richiama i prodotti della cassa; non crea un articolo nuovo e non imposta da sola un prezzo mancante. Anche la <a href="#fotocamera">lettura del codice prodotto</a> richiede un articolo gi&agrave; predisposto.</p>
+      <p class="notice">Se il tecnico ha cambiato nomi, prezzi o associazioni, <a href="#sincronizzazione">aggiorna la lista dalla cassa</a> prima di usarla. Una lista vuota non va risolta registrando un prodotto su un reparto casuale.</p>
+    </section>
+
+    <section id="ateco" class="card topic" aria-labelledby="titolo-ateco">
+      <p class="eyebrow">PI&Ugrave; ATTIVIT&Agrave; SULLA STESSA CASSA</p>
+      <h2 id="titolo-ateco">Scegliere l'attivit&agrave; ATECO</h2>
+      <p>Se il registratore &egrave; predisposto per pi&ugrave; attivit&agrave;, il pannello <strong>Ateco</strong> permette di scegliere quella a cui si riferisce la vendita. Non &egrave; il reparto del prodotto e non &egrave; una modifica della tua posizione fiscale.</p>
+      <ol>
+        <li>Fatti indicare dal tecnico o dal responsabile quale attivit&agrave; usare per le diverse vendite.</li>
+        <li>Prima di registrare le righe interessate, apri <strong>Ateco</strong> e leggi i codici disponibili.</li>
+        <li>Tocca la voce corretta una sola volta.</li>
+        <li>Controlla il riscontro sul display. La cassa pu&ograve; indicare <strong>ATECO CORRENTE</strong> con il numero della posizione selezionata.</li>
+        <li>Prosegui con reparti o articoli della vendita e verifica il documento emesso.</li>
+      </ol>
+      <p>Prima di un documento successivo non dare per scontato che l'attivit&agrave; cambi automaticamente: controllala o seleziona quella prevista. Non digitare il codice ATECO nel campo del prezzo o in Inserisci testo.</p>
+      <figure>
+        <a class="zoom" href="assets/img/ateco-lista.png"><img src="assets/img/ateco-lista.png" width="1280" height="800" alt="Lista ATECO con tre codici configurati sulla cassa, senza alcuna selezione effettuata." loading="lazy"></a>
+        <figcaption>La lista mostra le attivit&agrave; gi&agrave; predisposte. I codici della foto non sono un suggerimento per la tua attivit&agrave;.</figcaption>
+      </figure>
+      <div class="example"><strong>Esempio: due attivit&agrave; nello stesso negozio.</strong> Se il responsabile ti ha indicato una voce per l'attivit&agrave; A e un'altra per la B, prima della vendita A apri Ateco e seleziona la voce concordata. Leggi ATECO CORRENTE sul display, poi vendi gli articoli sui loro reparti. Prima di passare alla B seleziona la sua attivit&agrave;: non cambiare l'IVA di un reparto per ottenere lo stesso effetto.</div>
+      <div class="notice">Se la lista &egrave; vuota, usa <a href="#sincronizzazione">Aggiorna lista</a>. Se la cassa segnala che il codice non &egrave; disponibile o non &egrave; valido, fermati: aggiungere o cambiare le attivit&agrave; richiede l'intervento del tecnico, non una selezione a tentativi.</div>
+    </section>
+
+    <section id="clienti" class="card topic" aria-labelledby="titolo-clienti">
+      <p class="eyebrow">ANAGRAFICHE GI&Agrave; PRESENTI</p>
+      <h2 id="titolo-clienti">Usare la lista Clienti</h2>
+      <p>La barra laterale <strong>Clienti</strong> mostra le anagrafiche memorizzate nella cassa: nome o ragione sociale e, quando disponibili, codice fiscale o partita IVA.</p>
+      <ol>
+        <li>All'inizio dell'operazione apri <strong>Clienti</strong>.</li>
+        <li>Scorri e verifica sia il nome sia l'identificativo fiscale. In caso di omonimia non scegliere soltanto dal nome.</li>
+        <li>Tocca il cliente una volta: la selezione viene inviata alla cassa.</li>
+        <li>Controlla il riscontro sul display prima di registrare o completare il documento.</li>
+      </ol>
+      <p>Se l'anagrafica manca o &egrave; stata modificata sul registratore, <a href="#sincronizzazione">aggiorna Clienti</a>. La lista non contiene un pulsante per creare o modificare anagrafiche: chiedi al responsabile la procedura predisposta sulla tua cassa.</p>
+      <h3>Clienti nella lista o CLIENTE sulla tastiera?</h3>
+      <div class="example"><strong>Esempio: un cliente gi&agrave; censito.</strong> Apri Clienti e confronta nome e identificativo con i dati forniti dal cliente. Tocca soltanto l'anagrafica esatta e leggi il riscontro della cassa. Se manca, aggiorna la lista una volta: non scegliere una persona dal nome simile. Se ti serve soltanto inserire il codice fiscale sullo scontrino, usa invece la procedura <a href="#parlante">CLIENTE &rarr; Inserisci testo &rarr; INVIA</a>.</div>
+      <ul>
+        <li><strong>Clienti nel menu:</strong> richiama una persona o un'azienda gi&agrave; memorizzata.</li>
+        <li><strong>CLIENTE sulla tastiera della cassa:</strong> apre anche l'inserimento di un dato, per esempio il <a href="#parlante">codice fiscale</a> o il <a href="#lotteria">codice lotteria</a>. Non richiede necessariamente un'anagrafica salvata.</li>
+      </ul>
+      <div class="notice warning">Richiamare un cliente non trasforma da solo una normale vendita in una fattura. Per documenti diversi dallo scontrino segui la procedura concordata con il responsabile. Non selezionare clienti per provare e non pubblicare schermate con i loro dati.</div>
+    </section>
+
+    <section id="parlante" class="card topic" aria-labelledby="titolo-parlante">
+      <p class="eyebrow">DATI DEL CLIENTE SUL DOCUMENTO</p>
+      <h2 id="titolo-parlante">Fare uno scontrino parlante</h2>
+      <p>Per uno scontrino con il codice fiscale del cliente, inserisci il dato <strong>prima di registrare le righe</strong>. Non devi prima creare una voce nella lista Clienti.</p>
+      <ol>
+        <li>Parti con la cassa pronta e nessun documento aperto.</li>
+        <li>Premi <strong>CLIENTE sulla tastiera colorata</strong>, non Clienti nel menu laterale.</li>
+        <li>Attendi la richiesta <strong>TESTO/CF/PI/LOT.</strong> oppure <strong>TESTO/CF/PI</strong>.</li>
+        <li>Tocca <strong>Inserisci testo</strong>, elimina eventuale testo rimasto e scrivi il codice fiscale fornito dal cliente, senza spazi.</li>
+        <li>Premi <strong>INVIA</strong> una sola volta. Attendi <strong>CODICE OK</strong> e controlla il dato sul display. L'invio completa il campo: non aggiungere un secondo CLIENTE se il dato &egrave; gi&agrave; stato accettato.</li>
+        <li>Registra prodotti, controlla il totale e completa il pagamento normalmente.</li>
+        <li>Prima di consegnare il documento, verifica che il codice fiscale stampato sia quello richiesto dal cliente.</li>
+      </ol>
+      <p>Il codice fiscale personale normalmente ha 16 caratteri; una partita IVA ha 11 cifre e viene accettata nello stesso campo quando prevista. Usa sempre il dato effettivo del cliente: non inventare cifre e non sostituirlo con un nome o un codice lotteria.</p>
+      <div class="notice warning">Se compare <strong>CODICE ERRATO</strong> o il dato visualizzato non coincide, non proseguire alla cieca e non chiudere il documento per fare una prova. Verifica il dato e, se non sai come correggerlo, chiedi assistenza. Uno scontrino parlante non &egrave; automaticamente una fattura.</div>
+    </section>
+
+    <section id="lotteria" class="card topic" aria-labelledby="titolo-lotteria">
+      <p class="eyebrow">PRIMA DELLE RIGHE DI VENDITA</p>
+      <h2 id="titolo-lotteria">Inserire il codice lotteria</h2>
+      <p>Usa il <strong>codice lotteria di 8 lettere e/o cifre fornito dal cliente</strong>, non il codice fiscale. La funzione deve essere abilitata sul registratore.</p>
+      <ol>
+        <li>Con la cassa pronta e il documento chiuso, premi <strong>CLIENTE sulla tastiera della cassa</strong>.</li>
+        <li>Attendi il campo <strong>TESTO/CF/PI/LOT.</strong>.</li>
+        <li>Nel campo <strong>Inserisci testo</strong> cancella l'eventuale testo precedente e scrivi gli 8 caratteri del codice lotteria, senza spazi.</li>
+        <li>Premi <strong>INVIA</strong> una volta e controlla il riscontro <strong>ID LOTT</strong>. Non reinviare lo stesso dato solo perch&eacute; rimane nel campo di testo dell'app.</li>
+        <li>Se la cassa chiede <strong>ID LOTT?</strong>, ricontrolla il codice e conferma con <strong>MENU</strong>; per rinunciare usa <strong>C</strong>.</li>
+        <li>Registra gli articoli e completa con il <strong>pagamento elettronico ammesso</strong> dalla configurazione della cassa.</li>
+        <li>Controlla codice e indicazioni lotteria sul documento, insieme all'esito effettivo del pagamento.</li>
+      </ol>
+      <p>Se il codice viene letto con la fotocamera, inquadralo soltanto dopo aver aperto il campo CLIENTE e controlla lo stesso riscontro. Un codice letto o digitato non garantisce da solo la partecipazione: devono essere rispettate anche le condizioni del documento e del pagamento.</p>
+      <div class="notice warning"><strong>Non considerare equivalente un pagamento in contanti.</strong> Per la lotteria usa la modalit&agrave; elettronica prevista; buoni, sconti e pagamenti misti non vanno trattati automaticamente come un pagamento interamente elettronico. Nel dubbio verifica con il responsabile prima dell'incasso.</div>
+      <p>Chiarisci con il cliente se richiede un documento con codice fiscale oppure il codice lotteria. L'inserimento di uno dei due pu&ograve; sostituire il dato precedente: non inviarli entrambi come se fossero due note aggiuntive.</p>
+    </section>
+
+    <section id="vendita" class="card topic" aria-labelledby="titolo-vendita">
+      <p class="eyebrow">VENDITA QUOTIDIANA</p>
+      <h2 id="titolo-vendita">Fare uno scontrino</h2>
+      <p>Parti con la cassa pronta e nessun documento aperto. Gli importi si digitano con i <strong>tasti numerici della tastiera della cassa</strong>.</p>
+      <div class="example"><strong>Esempio: una vendita da 5,00 euro.</strong> Nella tastiera illustrata digita <kbd>5</kbd> <kbd>0</kbd> <kbd>0</kbd>, poi il reparto corretto. Controlla che il display mostri <strong>5,00</strong> prima di proseguire.</div>
+      <ol>
+        <li>Apri <strong>Reparti</strong> per vedere i nomi disponibili.</li>
+        <li>Digita l'importo e tocca il reparto corretto nella lista, oppure il corrispondente tasto reparto.</li>
+        <li>Attendi e verifica descrizione e importo sul display.</li>
+        <li>Ripeti per gli altri prodotti.</li>
+        <li>Premi <strong>SUBTOT.</strong> per controllare il totale.</li>
+        <li>Scegli il <a href="#pagamenti">pagamento</a>. A fine operazione attendi la stampa e <strong>Documento: Chiuso</strong>.</li>
+      </ol>
+      <h3>Pi&ugrave; pezzi dello stesso prodotto</h3>
+      <p>Digita la quantit&agrave;, premi <strong>X</strong>, digita il prezzo di un pezzo e tocca il reparto. Per esempio, per 3 pezzi da 5,00 euro: <kbd>3</kbd> <kbd>X</kbd> <kbd>5</kbd> <kbd>0</kbd> <kbd>0</kbd>, poi reparto. Verifica il totale di 15,00 euro.</p>
+      <figure>
+        <video controls playsinline preload="metadata" width="1280" height="800" poster="assets/img/quantita-15-euro.png" aria-label="Tre pezzi da cinque euro, controllo del subtotale e annullamento della vendita dimostrativa" aria-describedby="video-quantita">
+          <source src="assets/video/quantita-e-annullo.mp4" type="video/mp4">
+          <track kind="captions" src="assets/video/quantita-e-annullo.vtt" srclang="it" label="Italiano">
+          Il tuo browser non mostra il filmato. Segui i passaggi scritti qui sopra.
+        </video>
+        <figcaption id="video-quantita">Tre pezzi da 5,00 euro: quantit&agrave;, X, prezzo, reparto e SUBTOT. mostrano 15,00 euro. Solo in questo esempio, alla fine si annulla la vendita ancora aperta con 99 e N.MOD: <a href="#correzioni">vedi quando si pu&ograve; fare</a>. Non &egrave; un pagamento.</figcaption>
+      </figure>
+      <div class="example"><strong>Il cliente ti d&agrave; 20,00 euro per questi tre pezzi?</strong> Dopo SUBTOT. 15,00, tocca <kbd>2</kbd> <kbd>0</kbd> <kbd>0</kbd> <kbd>0</kbd> e CONTANTI. Il resto atteso &egrave; 5,00 euro. Controlla stampa e Documento: Chiuso. Questo incasso non &egrave; mostrato nel filmato e non va aggiunto dopo l'annullamento dimostrativo.</div>
+      <h3>Un prodotto venduto a peso</h3>
+      <p>Se il reparto &egrave; predisposto per la quantit&agrave; decimale, per 1,5 kg a 4,00 euro al kg tocca <kbd>1</kbd> <kbd>.</kbd> <kbd>5</kbd> <kbd>X</kbd> <kbd>4</kbd> <kbd>0</kbd> <kbd>0</kbd>, poi il reparto corretto. Il totale atteso &egrave; 6,00 euro. Il punto qui separa la <strong>quantit&agrave;</strong>; il prezzo di 4,00 euro si inserisce come 400.</p>
+      <h3>Articoli gi&agrave; memorizzati</h3>
+      <p>Apri <strong>Articoli</strong> e scegli il prodotto predisposto sulla cassa. Controlla la descrizione e il prezzo registrati. Se il prezzo non &egrave; impostato o la cassa chiede un dato, segui il display senza ripetere la selezione.</p>
+      <div class="notice warning"><strong>Attendi il riscontro.</strong> Se un tasto sembra lento, non premerlo ripetutamente: rischi di registrare pi&ugrave; volte la stessa vendita.</div>
+    </section>
+
+    <section id="pagamenti" class="card topic" aria-labelledby="titolo-pagamenti">
+      <p class="eyebrow">INCASSO</p>
+      <h2 id="titolo-pagamenti">Incassare un pagamento</h2>
+      <div class="two-columns">
+        <div>
+          <h3>Tutto in contanti</h3>
+          <p>Dopo aver controllato il totale, premi <strong>CONTANTI</strong> (oppure <strong>CASSA</strong>, secondo la tastiera) per saldare l'importo residuo.</p>
+          <p>Se vuoi indicare quanto ti ha consegnato il cliente, digita la somma ricevuta prima di premere <strong>CONTANTI</strong> e controlla il resto.</p>
+          <h3>Tutto con carta</h3>
+          <p>Premi <strong>BANCOMAT</strong> o scegli il pagamento elettronico predisposto nella lista <strong>Pagamenti</strong>. Verifica anche l'esito sul POS: la registrazione del pagamento sulla cassa, da sola, non garantisce che la carta sia stata addebitata.</p>
+        </div>
+        <figure>
+          <a class="zoom" href="assets/img/pagamento-contanti.png"><img src="assets/img/pagamento-contanti.png" width="1280" height="735" alt="Lista Pagamenti e display della cassa durante un pagamento in contanti." loading="lazy"></a>
+          <figcaption>I pagamenti disponibili dipendono dalla configurazione della tua cassa.</figcaption>
+        </figure>
+      </div>
+      <h3>Una parte in contanti e una parte con carta</h3>
+      <ol>
+        <li>Controlla il totale con <strong>SUBTOT.</strong>.</li>
+        <li>Digita la quota in contanti e premi <strong>CONTANTI</strong>.</li>
+        <li>Controlla il residuo sul display.</li>
+        <li>Premi <strong>BANCOMAT</strong> senza digitare un nuovo importo per saldare il residuo.</li>
+        <li>Verifica pagamento, stampa e chiusura del documento.</li>
+      </ol>
+      <div class="example">Per un totale di 20,00 euro: digita 1000, premi CONTANTI e attendi. Verifica il residuo di 10,00 euro, poi premi BANCOMAT.</div>
+      <p><strong>Controllo nell'esempio:</strong> il documento deve distinguere 10,00 euro in contanti e 10,00 elettronici, senza resto. Se dopo il primo pagamento il documento &egrave; ancora aperto e mostra il residuo, &egrave; normale: manca il saldo, non una seconda vendita. Non digitare nuovamente 2000 prima di BANCOMAT.</p>
+      <details>
+        <summary>Ticket e importi non riscossi</summary>
+        <p>Usa queste voci solo se predisposte per la tua attivit&agrave;. Per i ticket segui anche l'eventuale richiesta del numero di buoni. <strong>NON RISCOSSO</strong> non equivale a un incasso e non serve ad annullare uno scontrino. Se non sai quale voce scegliere, chiedi al tuo referente prima di chiudere.</p>
+      </details>
+    </section>
+
+    <section id="sconti" class="card topic" aria-labelledby="titolo-sconti">
+      <p class="eyebrow">PRIMA DEL PAGAMENTO</p>
+      <h2 id="titolo-sconti">Sconti e omaggi</h2>
+      <p>Aprendo <strong>Modificatori</strong> trovi anche maggiorazioni, reso, fondo cassa, prelievo, recupero crediti, acconti e buoni. La scelta agisce sulla cassa: usa solo la voce prevista per l'operazione in corso. Le abbreviazioni <strong>ART</strong> riguardano l'articolo, <strong>SBT</strong> il subtotale; <strong>%</strong> indica una percentuale, mentre <strong>$</strong> indica un importo.</p>
+      <p>Questa lista non ha il pulsante di aggiornamento dalla cassa. Alcune voci possono avere nomi simili o ripetuti, ma effetti diversi: non sceglierle a caso e non usare RESO o ANNULL. come sostituti delle procedure per un documento gi&agrave; emesso.</p>
+      <h3>Sconto percentuale sull'ultimo articolo</h3>
+      <ol>
+        <li>Registra il prodotto e controllalo sul display.</li>
+        <li>Digita la percentuale, per esempio <kbd>1</kbd> <kbd>0</kbd> per il 10%.</li>
+        <li>Premi <strong>-% ART.</strong> e verifica lo sconto.</li>
+      </ol>
+      <div class="example"><strong>Un articolo da 10,00 euro scontato del 10%.</strong> Tocca <kbd>1</kbd> <kbd>0</kbd> <kbd>0</kbd> <kbd>0</kbd>, il reparto corretto, poi <kbd>1</kbd> <kbd>0</kbd> e <strong>-% ART.</strong>. Controlla la riduzione di 1,00 euro e premi SUBTOT.: il residuo deve essere 9,00 euro. Solo dopo scegli il pagamento effettivo.</div>
+      <figure>
+        <video controls playsinline preload="metadata" width="1280" height="800" poster="assets/img/sconto-10-percento.png" aria-label="Sconto del dieci per cento su un articolo da dieci euro" aria-describedby="video-sconto">
+          <source src="assets/video/sconto-articolo.mp4" type="video/mp4">
+          <track kind="captions" src="assets/video/sconto-articolo.vtt" srclang="it" label="Italiano">
+          Segui l'esempio scritto: 10,00 euro meno il 10% danno 9,00 euro.
+        </video>
+        <figcaption id="video-sconto">Inserimento dello sconto dai tasti dell'app e controllo del totale di 9,00 euro. Il filmato si ferma prima del pagamento.</figcaption>
+      </figure>
+      <h3>Sconto percentuale sul totale</h3>
+      <p>Registra tutti i prodotti, premi <strong>SUBTOT.</strong>, digita la percentuale e premi <strong>-% SUBT.</strong>. Controlla il nuovo totale prima di incassare.</p>
+      <p>Per uno sconto di importo fisso usa soltanto il modificatore predisposto sulla tua cassa, secondo le indicazioni del tecnico: non digitare una somma su un tasto percentuale.</p>
+      <figure class="compact">
+        <a class="zoom" href="assets/img/sconto-articolo.png"><img src="assets/img/sconto-articolo.png" width="640" height="160" alt="Display con la conferma SCONTO ARTICOLO e l'importo sottratto." loading="lazy"></a>
+        <figcaption>Verifica sempre il segno meno e l'importo applicato.</figcaption>
+      </figure>
+      <h3>Offrire un prodotto in omaggio</h3>
+      <ol>
+        <li>Registra il prodotto al suo prezzo.</li>
+        <li>Subito dopo, apri <strong>Modificatori</strong> e scegli <strong>OMAGGIO</strong>.</li>
+        <li><strong>Non digitare un secondo importo.</strong> Controlla la riga OMAGGIO e la riduzione del totale.</li>
+        <li>Prosegui con gli altri prodotti o con il pagamento.</li>
+      </ol>
+      <div class="example"><strong>Un prodotto da 5,00 euro in omaggio.</strong> Registra 500 sul reparto corretto, poi apri Modificatori, scorri fino a OMAGGIO e toccalo una volta, senza altre cifre. Il display mostra OMAGGIO -5,00 e SUBTOT. 0,00 se non ci sono altri prodotti. Un totale a zero non elimina la necessit&agrave; di completare il documento nel modo previsto dalla tua cassa.</div>
+      <figure>
+        <video controls playsinline preload="metadata" width="1280" height="800" poster="assets/img/omaggio-5-euro.png" aria-label="Registrazione di cinque euro e applicazione di OMAGGIO dalla barra laterale" aria-describedby="video-omaggio">
+          <source src="assets/video/omaggio-articolo.mp4" type="video/mp4">
+          <track kind="captions" src="assets/video/omaggio-articolo.vtt" srclang="it" label="Italiano">
+          Segui i passaggi scritti per applicare OMAGGIO dopo la vendita.
+        </video>
+        <figcaption id="video-omaggio">Vendita da 5,00 euro, selezione di OMAGGIO nella lista e controllo del totale a zero. Non &egrave; mostrata l'emissione del documento.</figcaption>
+      </figure>
+      <figure>
+        <a class="zoom" href="assets/img/omaggio.png"><img src="assets/img/omaggio.png" width="1280" height="735" alt="OMAGGIO selezionato nella lista Modificatori e riduzione mostrata sul display." loading="lazy"></a>
+        <figcaption>Il modificatore OMAGGIO si applica dopo aver registrato il prodotto.</figcaption>
+      </figure>
+    </section>
+
+    <section id="funzioni" class="card topic" aria-labelledby="titolo-funzioni">
+      <p class="eyebrow">OPERAZIONI DEL REGISTRATORE</p>
+      <h2 id="titolo-funzioni">Usare la lista Funzioni</h2>
+      <ol>
+        <li>Apri <strong>Funzioni</strong> e scorri l'elenco. Il numero a fianco aiuta a distinguere le voci, ma non &egrave; una somma da digitare.</li>
+        <li>Tocca la funzione desiderata una volta.</li>
+        <li>Leggi il nome nella finestra <strong>Conferma funzione</strong>. Per rinunciare premi <strong>CANC</strong> (oppure Cancel nelle schermate precedenti).</li>
+        <li>Premi <strong>OK</strong> soltanto se il nome &egrave; corretto. Poi leggi le richieste della cassa e procedi secondo il display.</li>
+      </ol>
+      <dl class="definitions">
+        <dt>Letture e rapporti</dt><dd>Servono a consultare o stampare riepiloghi. Non confondere una lettura con una chiusura o un azzeramento dal nome simile.</dd>
+        <dt>Chiusure</dt><dd>Concludono le operazioni previste dalla cassa. Per quella giornaliera segui <a href="#chiusura">Chiudere la giornata</a>; non eseguire tutte le voci di chiusura per tentativi.</dd>
+        <dt>Annulli e resi</dt><dd>Riguardano documenti gi&agrave; emessi e richiedono i riferimenti dell'originale. Leggi <a href="#correzioni">annullamento</a> o <a href="#resi">reso</a> prima di iniziare.</dd>
+        <dt>Programmazioni</dt><dd>Modificano dati nel registratore, non soltanto nell'app. La <a href="#descrizioni">descrizione di un reparto</a> &egrave; trattata a parte; per impostazioni fiscali e configurazioni rivolgiti al tecnico.</dd>
+      </dl>
+      <div class="notice warning">La presenza di una funzione nell'elenco non significa che sia disponibile o appropriata per la tua cassa. Non usare funzioni di azzeramento, servizio o configurazione che non conosci. La conferma dell'app non sostituisce gli eventuali permessi e controlli del registratore.</div>
+    </section>
+
+    <section id="sincronizzazione" class="card topic" aria-labelledby="titolo-sincronizzazione">
+      <p class="eyebrow">VEDERE LE VOCI AGGIORNATE</p>
+      <h2 id="titolo-sincronizzazione">Aggiornare le liste dalla cassa</h2>
+      <p>Se sul registratore sono cambiati reparti, articoli, pagamenti o clienti, le liste dell'app possono mostrare ancora i dati precedenti. <strong>Aggiornare significa rileggere dalla cassa</strong>: non trasferisce una nuova programmazione dall'app al registratore.</p>
+      <ol>
+        <li>Completa eventuali operazioni in corso e attendi che la cassa sia collegata e identificata.</li>
+        <li>Apri la lista da aggiornare: <strong>Reparti</strong>, <strong>Ateco</strong>, <strong>Articoli</strong>, <strong>Pagamenti</strong> oppure <strong>Clienti</strong>.</li>
+        <li>Tocca una volta la <strong>freccia circolare</strong> in alto accanto al titolo della lista.</li>
+        <li>Attendi la fine della finestra di risincronizzazione e leggi il messaggio di esito. Non avviare altri aggiornamenti o vendite durante l'attesa.</li>
+        <li>Controlla le voci ricaricate prima di utilizzarle. Se sono ancora vuote o sbagliate, verifica la configurazione con il tecnico.</li>
+      </ol>
+      <dl class="definitions">
+        <dt>Reparti</dt><dd>Rilegge reparti e relative indicazioni IVA. Se mancano anche altri dati iniziali, l'app pu&ograve; effettuare un caricamento pi&ugrave; ampio.</dd>
+        <dt>Ateco</dt><dd>Rilegge le attivit&agrave; disponibili. Se la cassa non ne ha predisposte, l'aggiornamento non ne crea.</dd>
+        <dt>Articoli</dt><dd>Aggiorna prima i reparti e poi gli articoli, per mantenere coerenti le associazioni. Attendi entrambe le fasi.</dd>
+        <dt>Pagamenti</dt><dd>Rilegge nomi e caratteristiche dei pagamenti configurati sul registratore.</dd>
+        <dt>Clienti</dt><dd>Rilegge le anagrafiche presenti nella cassa. Non recupera automaticamente contatti dal telefono o da Google.</dd>
+      </dl>
+      <p><strong>Modificatori</strong> e <strong>Funzioni</strong> non hanno questo pulsante: non cercare di aggiornarli selezionando una voce. Aggiornare una lista non emette una vendita, non esegue una chiusura e non equivale a <strong>Ripristina acquisti</strong>, che riguarda solo l'abbonamento.</p>
+      <figure>
+        <video controls playsinline preload="metadata" width="1280" height="800" poster="assets/img/reparti-aggiornati.png" aria-label="Aggiornamento completo di Reparti e IVA, poi apertura della lista ATECO" aria-describedby="video-liste">
+          <source src="assets/video/aggiornare-liste.mp4" type="video/mp4">
+          <track kind="captions" src="assets/video/aggiornare-liste.vtt" srclang="it" label="Italiano">
+          Apri Reparti, premi la freccia circolare e attendi il completamento.
+        </video>
+        <figcaption id="video-liste">Freccia circolare, caricamento e lista aggiornata; poi si apre Ateco senza selezionare un'attivit&agrave;. <strong>L'attesa nel filmato &egrave; abbreviata:</strong> sulla cassa aspetta che la finestra di caricamento scompaia prima di cambiare pannello.</figcaption>
+      </figure>
+      <div class="example"><strong>Il tecnico ha rinominato un reparto, ma vedi ancora il vecchio nome?</strong> Con la cassa collegata apri Reparti, premi la freccia circolare una volta e attendi. Ricontrolla il nome nella lista; se devi usare anche Articoli, aggiorna quel pannello dopo il completamento. Non toccare il vecchio nome per &laquo;ricaricarlo&raquo;: invieresti una selezione di vendita.</div>
+      <div class="notice">Se compare <strong>Attendi l'identificazione della cassa connessa</strong>, aspetta il caricamento iniziale. Se un aggiornamento termina con errore, non considerarlo riuscito: controlla il collegamento e annota il messaggio per l'assistenza.</div>
+    </section>
+
+    <section id="correzioni" class="card topic" aria-labelledby="titolo-correzioni">
+      <p class="eyebrow">RIMEDIARE A UN ERRORE</p>
+      <h2 id="titolo-correzioni">Correggere o annullare</h2>
+      <h3>Importo digitato, ma non ancora registrato</h3>
+      <p>Premi <strong>C</strong> per cancellare l'immissione numerica, controlla il display e digita l'importo corretto. Questo non elimina uno scontrino gi&agrave; emesso.</p>
+      <h3>Rinunciare a tutta la vendita ancora aperta</h3>
+      <p>Sulla tastiera SMARTY EVO illustrata, <strong>prima di qualsiasi pagamento</strong>, puoi annullare tutte le righe della vendita in corso: esci da eventuali richieste aperte, controlla che si tratti proprio del documento da abbandonare, digita <kbd>9</kbd> <kbd>9</kbd> e premi <strong>N.MOD</strong>. Se viene richiesta un'autorizzazione, falla inserire al responsabile. Attendi il termine dell'operazione e verifica totale zero e <strong>Documento: Chiuso</strong>.</p>
+      <figure>
+        <a class="zoom" href="assets/img/annulla-vendita.png"><img src="assets/img/annulla-vendita.png" width="1280" height="800" alt="Dopo l'annullamento della vendita aperta: display a zero e Documento: Chiuso." loading="lazy"></a>
+        <figcaption>Esito della vendita dimostrativa annullata prima di incassare. La scritta CONTANTI con importo zero non indica un nuovo incasso.</figcaption>
+      </figure>
+      <div class="notice warning">Questa sequenza abbandona <strong>tutta la vendita aperta</strong>, non soltanto l'ultima riga. Non usarla per annullare uno scontrino gi&agrave; emesso, per un rimborso o dopo un pagamento parziale. In quei casi segui la procedura appropriata o chiedi assistenza.</div>
+      <h3>Scontrino gi&agrave; emesso</h3>
+      <p>Per annullare l'intero documento usa la funzione di annullamento, <strong>non il tasto ANNULLO della tastiera di vendita</strong>.</p>
+      <ol>
+        <li>Conserva lo scontrino originale. Controlla che non ci sia un'altra vendita aperta.</li>
+        <li>Apri <strong>Funzioni</strong> e seleziona la voce di <strong>annullamento documento</strong>. Leggi la richiesta di conferma prima di premere OK.</li>
+        <li>Segui le richieste sul display: verifica la matricola del registratore e inserisci numero di chiusura, numero dello scontrino e data riportati sul documento originale. Usa i tasti della cassa e conferma ogni campo con <strong>MENU</strong> quando richiesto.</li>
+        <li>Alla richiesta <strong>ANNULLO AUTO?</strong> ricontrolla i riferimenti. Conferma con <strong>MENU</strong> soltanto se vuoi annullare l'intero documento.</li>
+        <li>Attendi il documento di annullamento, verificane il riferimento e conservalo insieme all'originale.</li>
+      </ol>
+      <figure class="compact">
+        <a class="zoom" href="assets/img/conferma-annullo.png"><img src="assets/img/conferma-annullo.png" width="640" height="160" alt="Il display chiede ANNULLO AUTO? prima dell'annullamento del documento." loading="lazy"></a>
+        <figcaption>L'ultima conferma richiede particolare attenzione.</figcaption>
+      </figure>
+      <div class="notice warning"><strong>Se l'annullo automatico viene rifiutato, fermati.</strong> Non creare una vendita opposta e non sostituirlo con un reso. Contatta l'assistenza per valutare l'eventuale procedura manuale. Non inventare riferimenti o date.</div>
+      <p>Se hai gi&agrave; registrato una riga sbagliata ma non hai ancora chiuso lo scontrino, chiedi la procedura di correzione prevista per la tua tastiera: non completare un incasso errato per poi tentare di rimediare.</p>
+    </section>
+
+    <section id="resi" class="card topic" aria-labelledby="titolo-resi">
+      <p class="eyebrow">RESTITUZIONE DELLA MERCE</p>
+      <h2 id="titolo-resi">Fare un reso</h2>
+      <p>Usa il reso per una restituzione, non per correggere un pagamento. Tieni a portata di mano lo scontrino originale e concorda come restituire l'importo al cliente.</p>
+      <ol>
+        <li>Verifica che la cassa sia pronta e il documento chiuso.</li>
+        <li>Apri <strong>Funzioni</strong>, seleziona la voce di <strong>reso documento</strong> e controlla la conferma.</li>
+        <li>Inserisci i riferimenti richiesti, copiandoli dallo scontrino: matricola, numero di chiusura, numero documento e data. Conferma i campi con <strong>MENU</strong> come richiesto dal display.</li>
+        <li>Alla scelta <strong>RESO: AUTO</strong>, scegli il percorso appropriato sotto.</li>
+      </ol>
+      <figure class="compact">
+        <a class="zoom" href="assets/img/scelta-reso.png"><img src="assets/img/scelta-reso.png" width="640" height="160" alt="Display della cassa alla scelta RESO: AUTO, con frecce per cambiare opzione." loading="lazy"></a>
+        <figcaption>Leggi la scelta prima di confermare con MENU.</figcaption>
+      </figure>
+      <div class="two-columns">
+        <div class="inset">
+          <h3>Reso dell'intero documento</h3>
+          <p>Se la cassa consente il recupero automatico, lascia <strong>AUTO</strong> e conferma con <strong>MENU</strong>. Il documento viene recuperato senza ribattere gli articoli. Verifica la stampa prima di qualsiasi altra operazione.</p>
+        </div>
+        <div class="inset">
+          <h3>Reso di una parte</h3>
+          <p>Con la freccia gi&ugrave; seleziona <strong>MANUALE</strong> e conferma con <strong>MENU</strong>. Attendi <strong>PRATICA DI RESO</strong>, poi registra soltanto gli articoli o gli importi restituiti, sui reparti corretti. Controlla il totale e completa con la modalit&agrave; di rimborso concordata e predisposta.</p>
+        </div>
+      </div>
+      <div class="notice warning">Non superare quantit&agrave; e importi del documento originale. Se il riferimento non viene accettato o non sai quali righe usare, fermati e chiedi assistenza. Conserva il documento di reso con l'originale.</div>
+    </section>
+
+    <section id="chiusura" class="card topic" aria-labelledby="titolo-chiusura">
+      <p class="eyebrow">FINE GIORNATA</p>
+      <h2 id="titolo-chiusura">Chiudere la giornata</h2>
+      <p>La chiusura fiscale non &egrave; la chiusura dell'app. Eseguila quando hai terminato le operazioni della giornata.</p>
+      <ol>
+        <li>Completa eventuali documenti aperti. Controlla carta e collegamento della cassa.</li>
+        <li>Apri <strong>Funzioni</strong> e scegli <strong>CHIUSURA FISCALE</strong>.</li>
+        <li>Leggi la finestra <strong>CHIUSURA FISCALE?</strong>. Premi <strong>OK</strong> una sola volta; per rinunciare premi <strong>Cancel</strong>.</li>
+        <li>Attendi la conclusione delle stampe e delle operazioni della cassa. Non spegnerla e non inviare altre funzioni durante l'attesa.</li>
+        <li>Controlla il riepilogo e l'esito della trasmissione riportati dalla cassa. Conserva la stampa.</li>
+      </ol>
+      <figure class="compact">
+        <a class="zoom" href="assets/img/chiusura-giornaliera.png"><img src="assets/img/chiusura-giornaliera.png" width="685" height="202" alt="Finestra di conferma della chiusura fiscale, con i pulsanti Cancel e OK." loading="lazy"></a>
+        <figcaption>Controlla il nome della funzione prima di premere OK.</figcaption>
+      </figure>
+      <div class="notice"><strong>Compare TAGLIO CARTA?</strong> Premi <strong>C</strong> e attendi il termine del documento prima di richiedere la chiusura.</div>
+      <p>Una chiusura eseguita e una trasmissione riuscita non sono la stessa cosa. Se la cassa segnala un invio non riuscito, annota il messaggio e contatta l'assistenza: non ripetere la chiusura soltanto per tentare un nuovo invio.</p>
+    </section>
+
+    <section id="descrizioni" class="card topic" aria-labelledby="titolo-descrizioni">
+      <p class="eyebrow">PERSONALIZZARE I NOMI</p>
+      <h2 id="titolo-descrizioni">Cambiare la descrizione di un reparto</h2>
+      <p>Questa procedura modifica il nome memorizzato nel registratore. Non cambia soltanto la scritta sul tablet e non rinomina una vendita gi&agrave; registrata.</p>
+      <div class="notice warning">Esegui la modifica senza vendite aperte e solo se autorizzato. Non cambiare IVA, tipo di reparto o impostazioni fiscali: per questi dati rivolgiti al tecnico.</div>
+      <ol>
+        <li>Apri <strong>Funzioni</strong>, scegli <strong>PROGR. REPARTI</strong> e controlla la finestra di conferma.</li>
+        <li>Quando il display mostra <strong>REPARTO:</strong>, digita il numero del reparto con i tasti numerici della cassa e conferma con <strong>MENU</strong>.</li>
+        <li>Raggiungi il campo <strong>DESCRIZIONE</strong> con le frecce su e gi&ugrave;.</li>
+        <li>Tocca <strong>Inserisci testo</strong>, cancella l'eventuale testo precedente e scrivi il nuovo nome. Usa lettere senza accenti, cifre e spazi; per i reparti mantieniti entro <strong>19 caratteri</strong>, spazi compresi.</li>
+        <li>Premi <strong>INVIA</strong> una sola volta. Controlla il nome ricevuto dalla cassa; non aggiungere altre conferme se il display &egrave; gi&agrave; passato al campo successivo.</li>
+        <li>Da un campo successivo che non hai modificato, usa <strong>CLEAR</strong> per richiedere l'uscita. Alla domanda <strong>USCIRE?</strong> scegli <strong>SI</strong> con le frecce e conferma con <strong>MENU</strong>.</li>
+        <li>Torna in <strong>Reparti</strong>, aggiorna la lista con la freccia circolare e verifica il nome. Controlla anche che il documento risulti chiuso.</li>
+      </ol>
+      <figure>
+        <a class="zoom" href="assets/img/inserire-descrizione.png"><img src="assets/img/inserire-descrizione.png" width="1045" height="735" alt="Campo DESCRIZIONE sul display e inserimento di un nuovo nome con la tastiera del tablet." loading="lazy"></a>
+        <figcaption>Scrivi il nome nel campo Inserisci testo e invialo solo quando la cassa richiede la descrizione.</figcaption>
+      </figure>
+      <div class="notice"><strong>CLEAR non salva il campo.</strong> Nel campo DESCRIZIONE pu&ograve; cancellare il nome. Non usarlo l&igrave; per uscire. Nei campi a scelta pu&ograve; annullare la modifica: prima di uscire spostati su un altro campo e ricontrolla il valore.</div>
+      <details>
+        <summary>Devo passare a un altro reparto</summary>
+        <p>Con le frecce raggiungi <strong>GRUPPO</strong>, l'ultimo campo, poi premi <strong>MENU</strong>. Digita un altro numero soltanto quando ricompare <strong>REPARTO:</strong>. Le frecce destra e sinistra nella descrizione spostano il cursore: non selezionano un altro reparto.</p>
+      </details>
+    </section>
+
+    <section id="acconti" class="card topic" aria-labelledby="titolo-acconti">
+      <p class="eyebrow">IL CLIENTE PAGA PRIMA DEL RITIRO</p>
+      <h2 id="titolo-acconti">Acconti e beni da consegnare</h2>
+      <div class="notice warning"><strong>Prima di iniziare:</strong> fai identificare dal tecnico le voci per emissione e recupero dell'acconto e concorda con il commercialista il trattamento applicabile. Un acconto su un bene preciso, una caparra e una somma spendibile in futuro non sono automaticamente la stessa cosa.</div>
+      <h3>Acconto su un bene gi&agrave; individuato</h3>
+      <p>Quando il cliente paga una parte del prezzo di un bene definito, l'acconto &egrave; normalmente rilevante per l'IVA gi&agrave; al pagamento, per la somma incassata. Non scegliere una voce &laquo;non soggetta&raquo; solo perch&eacute; il prodotto verr&agrave; consegnato pi&ugrave; avanti.</p>
+      <ol>
+        <li>Con la cassa pronta, individua il reparto dedicato all'<strong>acconto del bene</strong>, con l'aliquota corretta gi&agrave; predisposta.</li>
+        <li>Digita soltanto l'importo ricevuto in anticipo, non l'intero prezzo del bene, e seleziona quel reparto.</li>
+        <li>Controlla descrizione, importo e IVA e chiudi con il pagamento effettivamente ricevuto.</li>
+        <li>Conserva il documento e collega acconto, cliente e ordine secondo l'organizzazione del negozio.</li>
+      </ol>
+      <div class="example">Bene da 122,00 euro, acconto ricevuto 50,00 euro: il primo documento certifica 50,00 euro sul reparto acconto predisposto. Il saldo da ricevere alla consegna sar&agrave; 72,00 euro.</div>
+      <h3>Consegna del bene e saldo</h3>
+      <ol>
+        <li>Recupera il documento dell'acconto e verifica che non sia gi&agrave; stato utilizzato o rimborsato.</li>
+        <li>Registra il bene al prezzo previsto, sul suo reparto corretto.</li>
+        <li>Subito dopo la riga a cui si riferisce, applica il <strong>recupero dell'acconto</strong> con il modificatore predisposto. Nella tastiera illustrata la sequenza &egrave;: importo dell'acconto, <strong>PREZZO</strong>, <strong>15</strong>, <strong>N.MOD</strong>.</li>
+        <li>Verifica la riga negativa <strong>ACCONTO</strong> e il residuo da incassare. Non deve essere una nuova somma positiva.</li>
+        <li>Incassa soltanto il saldo e conserva il collegamento fra i due documenti.</li>
+      </ol>
+      <div class="example">Nell'esempio: registra il bene a 122,00 euro, poi digita <kbd>5</kbd> <kbd>0</kbd> <kbd>0</kbd> <kbd>0</kbd>, premi PREZZO, digita <kbd>1</kbd> <kbd>5</kbd> e premi N.MOD. Verifica ACCONTO -50,00 e totale residuo 72,00 euro, quindi incassa 72,00 euro.</div>
+      <p class="notice">Il recupero dell'acconto evita di conteggiare di nuovo l'importo gi&agrave; documentato; non &egrave; uno sconto commerciale. Per pi&ugrave; beni o aliquote diverse fai predisporre la ripartizione corretta: non sottrarre tutto da una riga scelta a caso e non superare l'importo a cui il recupero si riferisce.</p>
+      <h3>Somma ricevuta senza avere ancora individuato il bene</h3>
+      <p>Se al pagamento non &egrave; ancora definita l'operazione a cui la somma si riferisce, non applicare automaticamente la procedura precedente. Pu&ograve; essere necessario un trattamento diverso, da chiarire prima con il commercialista.</p>
+      <p>Nel percorso predisposto con una voce iniziale <strong>non soggetta</strong>, l'incasso viene registrato su quella voce e documentato. Alla vendita si registrano tutti i beni con la loro IVA e si usa il pagamento dedicato per utilizzare la somma anticipata, <strong>senza ridurre l'IVA delle righe</strong>. Per l'uso del pagamento di tipo SCONTO A PAGARE segui le stesse cautele e l'ordine descritti per i <a href="#buoni-multiuso">buoni multiuso</a>. Questa non &egrave; una regola generale per ogni acconto.</p>
+      <h3>Il bene non viene pi&ugrave; consegnato</h3>
+      <p>Controlla quale documento deve essere rettificato: acconto iniziale e successivo documento di consegna sono distinti. Non annullarli entrambi automaticamente e non cancellare l'acconto se resta valido. Segui la procedura di <a href="#correzioni">annullamento</a> o <a href="#resi">reso</a> appropriata al caso e concorda l'eventuale restituzione del denaro. Non creare una vendita negativa improvvisata.</p>
+      <details>
+        <summary>Vedo ACC. BENE SOSP o ACCONTO SERVIZI nelle Funzioni</summary>
+        <p>Sono modalit&agrave; particolari della cassa, diverse dalla registrazione ordinaria di una riga di acconto e dal suo successivo recupero. Non aggiungerle alla procedura qui sopra. Usale soltanto se il tecnico ha predisposto espressamente quel percorso: ACC. BENE SOSP richiede reparti di tipo bene e limita i pagamenti utilizzabili; ACCONTO SERVIZI richiede reparti di tipo servizio. Non mescolare nello stesso percorso modalit&agrave; di acconto, reso, annullo o documento a seguire fattura.</p>
+      </details>
+    </section>
+
+    <section id="buoni-monouso" class="card topic" aria-labelledby="titolo-buoni-monouso">
+      <p class="eyebrow">BUONI CON TRATTAMENTO IVA GI&Agrave; NOTO</p>
+      <h2 id="titolo-buoni-monouso">Emettere e utilizzare un buono monouso</h2>
+      <p><strong>Monouso non significa semplicemente &laquo;spendibile una sola volta&raquo;.</strong> Ai fini fiscali &egrave; il buono per il quale, fin dall'emissione, &egrave; noto il trattamento IVA dei beni o servizi a cui d&agrave; diritto. La sola durata o il numero di utilizzi non ne determina la categoria.</p>
+      <p>Il percorso seguente riguarda un buono del tuo negozio, emesso e accettato dallo stesso esercente e con voci gi&agrave; predisposte. Buoni di altri emittenti, commissioni, promozioni o vendite del buono sotto il valore nominale richiedono una verifica specifica.</p>
+      <h3>Quando vendi il buono</h3>
+      <ol>
+        <li>Controlla che la voce di emissione <strong>BUONO MONO</strong>, o il nome concordato, abbia l'aliquota prevista.</li>
+        <li>Digita il valore venduto e seleziona il reparto di emissione.</li>
+        <li>Incassa con il mezzo effettivo, per esempio contanti o carta, e verifica il documento.</li>
+        <li>Consegna il buono con le condizioni di utilizzo del negozio e conserva un riferimento che permetta di verificarne emissione e residuo.</li>
+      </ol>
+      <p class="notice"><strong>L'IVA &egrave; gi&agrave; rilevante all'emissione/trasferimento del monouso.</strong> Il reparto di emissione non va reso non soggetto per rimandarla al ritiro del bene.</p>
+      <h3>Quando il cliente lo utilizza</h3>
+      <ol>
+        <li>Verifica validit&agrave;, valore disponibile e beni ammessi. La cassa non sostituisce il controllo di validit&agrave; del buono.</li>
+        <li>Registra il bene ritirato sul reparto corretto.</li>
+        <li>Subito dopo applica il modificatore di <strong>riscatto buono monouso</strong>. Nella tastiera illustrata: importo utilizzato, <strong>PREZZO</strong>, <strong>16</strong>, <strong>N.MOD</strong>.</li>
+        <li>Controlla la riga negativa <strong>BUONO MONO USO</strong> e il totale residuo: il valore gi&agrave; documentato non deve essere tassato una seconda volta sullo stesso passaggio.</li>
+        <li>Incassa l'eventuale differenza. Se il residuo &egrave; zero, nella tastiera illustrata chiudi con <strong>CASSA/CONTANTI senza digitare un importo</strong>: non significa che ricevi nuovo contante.</li>
+        <li>Registra l'utilizzo o l'eventuale residuo secondo la gestione dei buoni del negozio.</li>
+      </ol>
+      <div class="example">Buono monouso da 122,00 euro al 22%: all'emissione, documento 122,00 euro con IVA. Al ritiro di un bene dello stesso valore: bene +122,00, riscatto buono -122,00, residuo 0,00. Non incassare altri 122,00 euro.</div>
+      <details>
+        <summary>Esempio con differenza: buono da 50,00 euro e bene da 80,00 euro</summary>
+        <p>Questo esempio richiede un buono valido e un bene ammesso con il trattamento IVA gi&agrave; previsto per quel buono.</p>
+        <ol>
+          <li>Registra <kbd>8</kbd> <kbd>0</kbd> <kbd>0</kbd> <kbd>0</kbd> sul reparto del bene: 80,00 euro.</li>
+          <li>Digita <kbd>5</kbd> <kbd>0</kbd> <kbd>0</kbd> <kbd>0</kbd>, premi PREZZO, digita <kbd>1</kbd> <kbd>6</kbd> e premi N.MOD.</li>
+          <li>Verifica BUONO MONO USO -50,00, poi SUBTOT. 30,00.</li>
+          <li>Incassa soltanto 30,00 euro con il mezzo effettivo. Registra l'utilizzo del buono nella gestione del negozio e conserva i riferimenti.</li>
+        </ol>
+        <p>Non registrare i 50,00 euro anche in CONTANTI: li avevi gi&agrave; ricevuti e documentati all'emissione.</p>
+      </details>
+      <div class="notice warning">Non sostituire il riscatto monouso con OMAGGIO, uno sconto generico o il pagamento previsto per i multiuso. Se nella lista trovi due voci BUONO MONO USO dal nome uguale, non sceglierle a tentativi: usa la sequenza verificata sopra o fai indicare dal tecnico la voce corretta. Gli indici illustrati valgono per la tastiera mostrata nella guida.</div>
+    </section>
+
+    <section id="buoni-multiuso" class="card topic" aria-labelledby="titolo-buoni-multiuso">
+      <p class="eyebrow">BUONI CON TRATTAMENTO IVA NON ANCORA NOTO</p>
+      <h2 id="titolo-buoni-multiuso">Emettere e utilizzare un buono multiuso</h2>
+      <p>Un buono &egrave; multiuso quando all'emissione non &egrave; ancora noto il trattamento IVA dell'acquisto a cui dar&agrave; diritto, per esempio perch&eacute; consente di scegliere fra prodotti con aliquote diverse. <strong>Non significa semplicemente &laquo;ricaricabile&raquo; o &laquo;spendibile pi&ugrave; volte&raquo;.</strong> Fai confermare la categoria dal commercialista.</p>
+      <h3>Quando vendi il buono</h3>
+      <ol>
+        <li>Usa la voce di emissione dedicata al <strong>BUONO MULTI</strong>, predisposta come <strong>non soggetta</strong>. Non scegliere un reparto ordinario con IVA a zero per ottenere un effetto simile.</li>
+        <li>Digita il valore, seleziona la voce e incassa con il mezzo effettivamente ricevuto.</li>
+        <li>Controlla la descrizione e l'indicazione non soggetta nel documento e registra valore e riferimento del buono.</li>
+      </ol>
+      <p class="notice">Per il multiuso, la cessione dei beni o la prestazione dei servizi viene rilevata al momento dell'utilizzo secondo le regole applicabili, non per il solo trasferimento iniziale del buono. Questo non significa che la merce acquistata con il buono sia senza IVA.</p>
+      <h3>Quando il cliente lo utilizza</h3>
+      <ol>
+        <li>Verifica il valore disponibile del buono e registra normalmente tutti i prodotti, ciascuno con la propria IVA.</li>
+        <li>Premi <strong>SUBTOT.</strong> e confronta il totale con la quota di buono che vuoi utilizzare.</li>
+        <li>Se il cliente deve aggiungere denaro, <strong>incassa prima la differenza</strong> con contanti o carta.</li>
+        <li>Per ultimo, chiudi il residuo con la voce <strong>BUONO MULTIUSO</strong> predisposta nei Pagamenti. Nel percorso illustrato &egrave; un pagamento di tipo <strong>SCONTO A PAGARE</strong>, utilizzato per saldare il residuo.</li>
+        <li>Controlla che le righe di vendita mantengano la loro IVA e che la quota coperta dal buono non sia stata registrata come nuovo contante o nuovo pagamento con carta.</li>
+      </ol>
+      <div class="example">Spesa 122,00 euro, buono da utilizzare 50,00 euro: prima incassa 72,00 euro con il pagamento reale; poi seleziona il pagamento dedicato al buono per il residuo di 50,00 euro. Se il buono copre tutti i 122,00 euro, usa direttamente quel pagamento per saldare l'intero residuo.</div>
+      <details>
+        <summary>I tocchi nell'esempio: spesa 122,00 euro, buono 50,00, differenza con carta</summary>
+        <ol>
+          <li>Registra i prodotti e verifica SUBTOT. 122,00.</li>
+          <li>Digita <kbd>7</kbd> <kbd>2</kbd> <kbd>0</kbd> <kbd>0</kbd> e premi BANCOMAT: la quota con carta &egrave; 72,00 euro. Verifica anche l'esito sul POS.</li>
+          <li>Leggi il residuo di 50,00 euro sul display. Non ribattere i prodotti.</li>
+          <li>Apri Pagamenti e tocca una volta la voce dedicata al buono multiuso, predisposta dal tecnico. Non usare una voce dal nome simile senza averne verificato la destinazione.</li>
+          <li>Attendi la chiusura: sul documento controlla i prodotti con la loro IVA, la quota elettronica di 72,00 euro e l'utilizzo del buono per 50,00 euro. Aggiorna il residuo del buono nella gestione del negozio.</li>
+        </ol>
+      </details>
+      <div class="notice warning"><strong>Il pagamento SCONTO A PAGARE va usato per ultimo e per l'intero residuo.</strong> Non tentare di applicare prima un buono parziale lasciando il resto da incassare dopo. Non usare uno sconto articolo o subtotale: ridurrebbe la vendita anzich&eacute; rappresentare il modo con cui viene saldata.</div>
+      <p>Se sul documento l'importo pagato appare inferiore al totale, oppure zero quando tutto &egrave; coperto dal buono, non significa che il prodotto sia in omaggio: controlla l'evidenza del buono e il residuo. Per un valore del buono superiore alla spesa, non dare resto automaticamente e non aumentare il documento: gestisci l'eventuale credito residuo secondo le condizioni previste dal negozio.</p>
+      <h3>Buono scaduto, da rimborsare o acquisto restituito</h3>
+      <p>Interrompi il normale utilizzo e verifica con il responsabile condizioni e documenti da rettificare. L'annullo dell'acquisto pagato con un buono non riattiva necessariamente il buono stesso. Non usare la vendita di un nuovo buono, un omaggio o uno sconto per simulare un rimborso.</p>
+    </section>
+
+    <section id="ticket" class="card topic" aria-labelledby="titolo-ticket">
+      <p class="eyebrow">PAGAMENTI CONVENZIONATI</p>
+      <h2 id="titolo-ticket">Ticket, buoni pasto e buoni convenzionati</h2>
+      <p>Buoni pasto, buoni celiachia e altri strumenti convenzionati non sono automaticamente il buono regalo del negozio. Usa il pagamento dedicato alla convenzione e segui anche le verifiche dell'ente o del gestore: registrare il ticket sulla cassa non autorizza da solo il buono.</p>
+      <ol>
+        <li>Verifica che i prodotti e il buono siano ammessi dalla convenzione.</li>
+        <li>Registra i beni o servizi sui reparti predisposti e controlla il totale.</li>
+        <li>Per un ticket nella tastiera illustrata digita la <strong>quantit&agrave;</strong>, premi <strong>X</strong>, digita il <strong>valore di un ticket</strong> e seleziona il pagamento dedicato nella lista Pagamenti. La quantit&agrave; va indicata anche se &egrave; 1.</li>
+        <li>Controlla il valore complessivo dei ticket registrati e completa l'eventuale residuo con contanti o carta.</li>
+        <li>Verifica sia il documento della cassa sia l'esito della gestione del buono convenzionato.</li>
+      </ol>
+      <div class="example">Un ticket da 10,00 euro: <kbd>1</kbd> <kbd>X</kbd> <kbd>1</kbd> <kbd>0</kbd> <kbd>0</kbd> <kbd>0</kbd>, poi il pagamento ticket predisposto. Per due ticket dello stesso valore, la quantit&agrave; &egrave; 2 e il valore unitario resta 10,00 euro.</div>
+      <div class="example"><strong>Due ticket da 5,00 euro su una spesa da 12,00 euro.</strong> Se la convenzione lo consente, registra i prodotti per 12,00, poi tocca <kbd>2</kbd> <kbd>X</kbd> <kbd>5</kbd> <kbd>0</kbd> <kbd>0</kbd> e il pagamento ticket dedicato. Controlla ticket per 10,00 e residuo 2,00; incassa questi 2,00 con il pagamento reale. Non digitare 1000 come valore unitario: con quantit&agrave; 2 conteresti 20,00 euro.</div>
+      <p class="notice warning">Non dare resto in contanti sui ticket e non usarli oltre il valore del documento. Limiti, prodotti ammessi, aliquote e successivi rapporti con l'emittente dipendono dalla convenzione: non modificarli per far accettare un pagamento rifiutato.</p>
+    </section>
+
+    <section id="non-riscosso" class="card topic" aria-labelledby="titolo-non-riscosso">
+      <p class="eyebrow">VENDITA, INCASSO E IVA NON SONO LA STESSA COSA</p>
+      <h2 id="titolo-non-riscosso">Non riscosso e prestazioni di servizi</h2>
+      <h3>Bene consegnato ma non interamente pagato</h3>
+      <p>Registra il bene sul suo reparto, incassa l'eventuale parte ricevuta e chiudi la quota che resta dovuta con <strong>NON RISCOSSO</strong>, soltanto se questa &egrave; la procedura prevista per il negozio. Controlla che il documento distingua pagato e non riscosso e conserva il riferimento del credito.</p>
+      <p><strong>Un bene consegnato non diventa senza IVA perch&eacute; non &egrave; stato pagato.</strong> In via generale la consegna rileva ai fini IVA; NON RISCOSSO non &egrave; un tasto per rimandare l'imposta a scelta.</p>
+      <div class="example"><strong>Bene da 80,00 euro, il cliente versa soltanto 30,00.</strong> Registra 8000 sul reparto del bene e controlla SUBTOT. 80,00. Digita 3000 e CONTANTI se ricevi davvero 30,00 in contanti; leggi il residuo 50,00, poi chiudilo con NON RISCOSSO se previsto per quel caso. Controlla pagato 30,00 e non riscosso 50,00 e annota il credito secondo la procedura del negozio. Non usare OMAGGIO per la parte ancora dovuta.</div>
+      <h3>Servizio eseguito e incassato in parte</h3>
+      <p>Usa reparti di <strong>tipo servizio</strong>, non reparti di tipo bene con il solo nome cambiato. Registra la prestazione, indica il pagamento effettivo e chiudi l'eventuale differenza con NON RISCOSSO secondo la procedura predisposta.</p>
+      <div class="example">Prestazione da 100,00 euro, ricevuti 30,00 euro: documento con servizio 100,00, pagamento effettivo 30,00 e NON RISCOSSO 70,00. Non indicare 100,00 come interamente incassati se ne hai ricevuti solo 30,00.</div>
+      <p>Per i servizi, in via generale, il momento IVA &egrave; legato al pagamento; una fattura anticipata e i regimi particolari possono cambiare il trattamento. La distinzione corretta fra bene e servizio deve essere predisposta nella cassa, non decisa cambiando un nome durante la vendita.</p>
+      <h3>Incasso successivo o acconto su un servizio</h3>
+      <p>Prima di procedere recupera il documento originario e fai distinguere dal responsabile un <strong>acconto prima della prestazione</strong> dall'<strong>incasso successivo di una prestazione gi&agrave; documentata come non riscossa</strong>. Non ribattere automaticamente lo stesso servizio come una nuova vendita: rischi di duplicare quanto gi&agrave; registrato.</p>
+      <p>Usa il percorso di acconto, saldo o recupero crediti predisposto per quel caso, mantenendo il collegamento con il primo documento. La voce ACCONTO SERVIZI nelle Funzioni &egrave; una modalit&agrave; specifica, non un passaggio obbligatorio per ogni incasso parziale.</p>
+      <h3>&laquo;Seguir&agrave; fattura&raquo;</h3>
+      <p>&Egrave; un percorso diverso dal normale non riscosso e dallo <a href="#parlante">scontrino parlante</a>. Non attivarlo solo perch&eacute; conosci il codice fiscale del cliente. Fai predisporre identificativi, documento e successiva fatturazione dal responsabile: chiudere in NON RISCOSSO non emette da solo la fattura.</p>
+    </section>
+
+    <section id="note-fiscali" class="card topic" aria-labelledby="titolo-note-fiscali">
+      <p class="eyebrow">PER NON CONFONDERE LE OPERAZIONI</p>
+      <h2 id="titolo-note-fiscali">Indicazioni fiscali e fonti</h2>
+      <div class="notice">Queste sono indicazioni generali per orientare l'uso della cassa, non una consulenza fiscale sulla tua attivit&agrave;. Concorda con il commercialista classificazione di buoni e somme ricevute, aliquote, documenti e rettifiche; il tecnico deve predisporre le voci corrispondenti. Gli esempi numerici non impongono un'aliquota a tutti i prodotti.</div>
+      <dl class="definitions">
+        <dt>Monouso e multiuso</dt><dd>Si distinguono in base al trattamento IVA noto o meno all'emissione, non al numero di volte in cui il buono pu&ograve; essere usato.</dd>
+        <dt>Acconto e caparra</dt><dd>Non sono sinonimi. La funzione concreta della somma e gli accordi con il cliente ne determinano il trattamento: non scegliere il reparto da una parola generica.</dd>
+        <dt>Prezzo scontato e uso di un buono</dt><dd>Uno sconto commerciale e un pagamento tramite buono non hanno automaticamente lo stesso effetto IVA. Usa le voci dedicate, anche quando due percorsi arrivano allo stesso importo da incassare.</dd>
+        <dt>Omaggio</dt><dd>Un importo da incassare pari a zero non implica sempre IVA pari a zero. L'effetto fiscale dipende dal bene e dal tipo di cessione gratuita; la voce OMAGGIO deve essere predisposta per il caso corretto.</dd>
+        <dt>Annullamento e reso</dt><dd>Devono riferirsi a un'operazione reale e al documento corretto. Una stampa di annullo o reso non esegue automaticamente il rimborso sul POS e non ripristina da sola il credito di un buono.</dd>
+      </dl>
+      <h3>Riferimenti ufficiali per il responsabile e il commercialista</h3>
+      <p>Le spiegazioni sui buoni si basano sugli articoli <strong>6-bis, 6-ter e 6-quater del DPR 633/1972</strong>, introdotti dal decreto legislativo 141/2018. Le regole generali sul momento di effettuazione di cessioni, servizi e anticipi sono nell'<strong>articolo 6 del DPR 633/1972</strong>.</p>
+      <ul>
+        <li><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1972-10-26;633" target="_blank" rel="noopener noreferrer">DPR 633/1972 su Normattiva</a>: consulta il testo vigente e gli articoli indicati.</li>
+        <li><a href="https://www.gazzettaufficiale.it/atto/serie_generale/caricaArticolo?art.versione=1&amp;art.idGruppo=0&amp;art.flagTipoArticolo=0&amp;art.codiceRedazionale=18G00167&amp;art.idArticolo=1&amp;art.idSottoArticolo=1&amp;art.idSottoArticolo1=10&amp;art.dataPubblicazioneGazzetta=2018-12-28&amp;art.progressivo=0" target="_blank" rel="noopener noreferrer">Decreto legislativo 29 novembre 2018, n. 141, articolo 1</a>: disciplina dei buoni-corrispettivo nella Gazzetta Ufficiale.</li>
+      </ul>
+      <p class="small">Verifica delle fonti: 17 ottobre 2026. Prima di cambiare la gestione del negozio controlla eventuali aggiornamenti e le regole specifiche del tuo settore. La guida non sostituisce le condizioni di una convenzione o gli adempimenti di fatturazione.</p>
+    </section>
+
+    <section id="assistenza" class="card topic" aria-labelledby="titolo-assistenza">
+      <p class="eyebrow">QUANDO SERVE UNA MANO</p>
+      <h2 id="titolo-assistenza">Problemi e assistenza</h2>
+      <details open>
+        <summary>La cassa non si collega</summary>
+        <p>Controlla che sia accesa e predisposta al collegamento. Con Wifi verifica la stessa rete e l'indirizzo corretto. Con Bluetooth controlla distanza, attivazione e autorizzazioni. Con cavo verifica collegamenti e porta selezionata. Se non si collega, comunica all'assistenza il messaggio esatto.</p>
+      </details>
+      <details>
+        <summary>Il collegamento cade durante una vendita</summary>
+        <p>Non ripetere le righe o il pagamento alla cieca. Controlla sulla cassa se il documento &egrave; ancora aperto e se &egrave; stato stampato. Dopo il ripristino del collegamento leggi lo stato prima di continuare; nel dubbio chiedi assistenza.</p>
+      </details>
+      <details>
+        <summary>Leggo Non risponde oppure DATI NON AGGIORN.</summary>
+        <p>Il collegamento pu&ograve; risultare ancora presente, ma l'app non riceve pi&ugrave; riscontri recenti dalla cassa. I comandi vengono sospesi per evitare operazioni alla cieca. Non ripetere vendite o pagamenti: controlla il registratore e attendi il ripristino. Gli inserimenti di testo interrotti non vengono ripresi automaticamente; prima di riscriverli verifica il campo effettivo sulla cassa. Se la situazione continua, contatta l'assistenza.</p>
+      </details>
+      <details>
+        <summary>Vedo un messaggio di errore o una richiesta inattesa</summary>
+        <p>Leggi e annota il testo prima di premere altri tasti. Non insistere sulla stessa funzione e non inserire valori inventati. Se viene richiesta un'autorizzazione che non conosci, rivolgiti al responsabile o al tecnico.</p>
+      </details>
+      <details>
+        <summary>Il campo Inserisci testo non viene accettato</summary>
+        <p>Usalo solo quando la cassa richiede un dato compatibile, per esempio una descrizione. Numeri di reparto, importi e comandi vanno inseriti con i tasti della cassa. Non tutti i campi accettano il testo inviato: fermati se il display non cambia come previsto.</p>
+      </details>
+      <details>
+        <summary>Compare una richiesta di abbonamento</summary>
+        <p>Apri <strong>Impostazioni</strong> e controlla lo stato in <strong>Abbonamento</strong>. Segui <a href="#abbonamento">acquisto e ripristino del piano</a>: se hai gi&agrave; pagato, usa lo stesso account Google Play e verifica il ripristino prima di procedere a un nuovo acquisto.</p>
+      </details>
+      <h3>Contattare il supporto</h3>
+      <p>Per riaprire questa guida dall'app, tocca <strong>Help</strong>, riconoscibile dall'icona del libro aperto. La guida online richiede una connessione Internet.</p>
+      <p>Apri <strong>Assistenza online</strong> dal menu dell'app. Oppure vai in <strong>Impostazioni &rarr; Segnala un problema</strong>, descrivi cosa stavi facendo e segui la procedura di invio proposta.</p>
+      <p>Indica modello della cassa, tipo di collegamento, messaggio visualizzato e se il documento risulta aperto o chiuso. Non inviare dati dei clienti, password o informazioni di pagamento nelle immagini.</p>
+    </section>
+    <p class="no-results" hidden>Nessun argomento trovato. Prova un'altra parola oppure svuota la ricerca.</p>
+    <footer>Keyb(ED)It! &middot; Guida per l'esercente <a href="#inizio">Torna all'inizio &uarr;</a></footer>
+  </main>
+  <dialog id="immagine" aria-label="Immagine ingrandita">
+    <button class="close-image" type="button">Chiudi immagine</button>
+    <img alt="">
+    <p></p>
+  </dialog>
+</body>
+</html>
