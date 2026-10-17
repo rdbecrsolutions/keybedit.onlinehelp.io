@@ -9,8 +9,8 @@ Il sito viene pubblicato con GitHub Pages dal ramo `main`, cartella radice:
 
 https://rdbecrsolutions.github.io/keybedit.onlinehelp.io/
 
-Il dominio previsto per il pulsante Help dell'app e':
-`https://keybedit.onlinehelp.io/`.
+Il pulsante Help dell'app usa attualmente l'indirizzo GitHub Pages sopra.
+Il dominio personalizzato previsto e' `https://keybedit.onlinehelp.io/`.
 Per attivarlo, configurare un record DNS CNAME `keybedit` verso
 `rdbecrsolutions.github.io`, quindi impostare il dominio personalizzato nelle
 impostazioni Pages del repository e abilitare HTTPS quando il certificato
