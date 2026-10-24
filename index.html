@@ -230,6 +230,7 @@
         <li>Conferma l'acquisto nella finestra Google Play solo se vuoi sottoscriverlo. Se rinunci, annulla quella finestra.</li>
         <li>Torna all'app e attendi la comparsa di <strong>Piano mensile attivo</strong> oppure <strong>Piano annuale attivo</strong>. Poi chiudi le Impostazioni.</li>
       </ol>
+      <p>Con il piano attivo la vendita può essere pagata. Nel test, il pagamento con BANCOMAT da 2,00 € è stato stampato come scontrino <strong>NON FISCALE</strong> senza codice lotteria: è una imperfezione nota del protocollo. Verifica nella finestra Google Play la durata della prova e l'eventuale rinnovo.</p>
       <p>Acquisto e ripristino tramite Google Play sono disponibili nell'app Android, non nei pulsanti della versione PC. Se i piani non sono disponibili o i pulsanti restano inattivi, verifica il collegamento a Internet e Google Play e chiedi assistenza: non ripetere acquisti.</p>
       <h3>Ho gi&agrave; pagato, ma il piano non risulta attivo</h3>
       <figure class="compact">
@@ -471,6 +472,47 @@
               <dt>Annulli e resi</dt><dd>Riguardano documenti già emessi e richiedono i dati dello scontrino originale. Leggi <a href="#correzioni">annullamento</a> o <a href="#resi">reso</a> prima di iniziare.</dd>
               <dt>Programmazioni</dt><dd>Modificano dati nella cassa, non soltanto nell'app. La <a href="#descrizioni">descrizione di un reparto</a> è trattata a parte; per impostazioni fiscali e configurazioni rivolgiti al tecnico.</dd>
       </dl>
+      <h3>Esempio: codici lotteria (021, 510, 906)</h3>
+      <p>Sequenza usata per verificare i codici lotteria sulla cassa. Ogni messaggio compare sul display della cassa, non nell'app.</p>
+      <ol>
+        <li><strong>021 CHIUSURA FISCALE</strong>: alla conferma il display mostra <strong>FIRMA XML CHIUS</strong> e attende alcuni minuti. Al termine torna <strong>Pronta</strong> con <strong>Documento: Chiuso</strong>. La stampa riporta <strong>ESITO TRASMISSIONE: POSITIVO</strong>. Questa chiusura esegue anche la sincronizzazione dei codici lotteria.</li>
+        <li><strong>510 REPORT COD. LOTT.</strong>: dopo <strong>OK</strong> il display mostra <strong>TIPO RAPPORTO: ULTIMO</strong>. Premi <strong>MENU</strong> per confermare, poi <strong>DETTAGLIO: COMPLETO</strong> e di nuovo <strong>MENU</strong>. Il rapporto viene stampato come documento <strong>NON FISCALE</strong>.</li>
+        <li><strong>906 DISATTIVAZIONE RT</strong>: dopo <strong>OK</strong> il display mostra <strong>CONFERMA</strong> mentre la cassa stampa. La ricevuta riporta <strong>DISATTIVAZIONE</strong> e <strong>REGISTRATORE DISATTIVATO</strong>. Dopo questa operazione i codici lotteria risultano invalidati.</li>
+        <li><strong>510 REPORT COD. LOTT.</strong> di nuovo: la stampa elenca i codici invalidati in <strong>LISTA CODICI INVALIDATI</strong>, uno per riga, con la data.</li>
+      </ol>
+      <h3>Riattivare il registratore (905)</h3>
+      <ol>
+        <li><strong>021 CHIUSURA FISCALE</strong>: esegui prima una chiusura, poi l'attivazione. Se il display mostra <strong>ESEGUI CHIUSURA</strong>, la cassa richiede una chiusura prima di proseguire.</li>
+        <li><strong>905 ATTIVAZIONE RT</strong>: dopo <strong>OK</strong> il display mostra <strong>CONFERMA</strong>; premi <strong>MENU</strong> per confermare. La ricevuta riporta <strong>REGISTRATORE ATTIVATO</strong>.</li>
+        <li>Subito dopo l'attivazione la cassa esegue da sola una chiusura: la stampa riporta <strong>MESSA IN SERVIZIO</strong> e poi la chiusura con <strong>ESITO TRASMISSIONE: POSITIVO</strong>. In questa chiusura la cassa scarica i nuovi codici lotteria.</li>
+        <li><strong>510 REPORT COD. LOTT.</strong>: verifica i codici validi. La stampa riporta <strong>LISTA CODICI VALIDI</strong>, con numero e data di ogni codice.</li>
+      </ol>
+      <p class="small">Nelle liste della cassa (Funzioni, tipo rapporto, dettaglio) il pulsante <strong>MENU</strong> conferma la voce selezionata. Il tasto <strong>ESEGUI</strong> della tastiera non conferma le liste. Per vedere i codici sulla cassa non digitare il numero della funzione sulla tastiera: le cifre inserite diventano un importo di vendita. Scegli la voce dalla lista Funzioni.</p>
+      <div class="notice warning"><strong>906 disattiva il registratore telematico.</strong> Usala solo se sai come riattivarlo (905) e hai verificato le condizioni della cassa; non eseguirla su una cassa in esercizio.</div>
+      <p>Esempio di ricevuta del rapporto 510 (non fiscale, testo ridotto):</p>
+      <pre class="receipt">DOCUMENTO GESTIONALE USO INTERNO
+RICHIESTA: 16-10-2026 14:46
+CODICI LOTTERIA
+DATA RICHIESTA: 16-10-2026
+ORA RICHIESTA: 14:47:02
+ID TRASMISSIONE: 8638eb61-ac54-6d35-7f75-516d077975f9
+ID OPERAZIONE:   3273746f-38f3-489f-be30-ea0c1fe62655
+LISTA CODICI INVALIDATI:
+ - CODICE 00073: 16-10-2026
+ - CODICE 00074: 17-10-2026
+ - CODICE 00075: 18-10-2026
+ - CODICE 00076: 19-10-2026
+ - CODICE 00077: 20-10-2026
+ - CODICE 00078: 21-10-2026
+ - CODICE 00079: 22-10-2026
+ - CODICE 00080: 23-10-2026
+ - CODICE 00081: 24-10-2026
+ - CODICE 00082: 25-10-2026
+ - CODICE 00083: 26-10-2026
+ - CODICE 00084: 27-10-2026
+23-10-2026 17:07
+N.DOC.GEST. 0268-0002
+== NON FISCALE ==</pre>
             <div class="notice warning">La presenza di una funzione nell'elenco non significa che sia disponibile o appropriata per la tua cassa. Non usare funzioni di azzeramento, servizio o configurazione che non conosci. La conferma dell'app non sostituisce gli eventuali permessi e controlli della cassa.</div>
     </section>
 
@@ -511,7 +553,15 @@
       <h3>Importo digitato, ma non ancora registrato</h3>
       <p>Premi <strong>C</strong> (cancella ciò che hai digitato), controlla il display e digita l'importo corretto. Questo non elimina uno scontrino già emesso.</p>
       <h3>Rinunciare a tutta la vendita ancora aperta</h3>
-      <p>Sulla tastiera della cassa, <strong>prima di qualsiasi pagamento</strong>, puoi annullare tutte le righe della vendita in corso: esci da eventuali richieste aperte, controlla che si tratti proprio del documento da abbandonare, digita <kbd>9</kbd> <kbd>9</kbd> e premi <strong>N.MOD</strong> (il tasto che applica la funzione digitata prima: qui l'annullo della vendita aperta). Se viene richiesta un'autorizzazione, falla inserire al responsabile. Attendi il termine dell'operazione e verifica totale zero e <strong>Documento: Chiuso</strong>.</p>
+      <p>Sulla tastiera della cassa, <strong>prima di qualsiasi pagamento</strong>, puoi annullare tutte le righe della vendita in corso. Il numero <strong>99</strong> non compare nella barra <strong>Modificatori</strong>: si digita sulla tastiera, come un importo.</p>
+      <ol>
+        <li>Esci da eventuali richieste aperte e controlla che si tratti proprio del documento da abbandonare.</li>
+        <li>Digita <kbd>9</kbd> <kbd>9</kbd>: il display mostra <strong>0,99</strong>.</li>
+        <li>Premi <strong>N.MOD</strong> (il tasto che applica la funzione digitata prima: qui l'annullo della vendita aperta).</li>
+        <li>Se viene richiesta un'autorizzazione, falla inserire al responsabile. Attendi il termine dell'operazione e verifica che il display mostri <strong>CONTANTI € 0,00</strong> e che lo stato sia <strong>Documento: Chiuso</strong>.</li>
+      </ol>
+      <div class="example">Nell'esempio di prova: vendita aperta di 0,03 euro (tre righe da 0,01). Dopo 99 e N.MOD la cassa stampa <em>ANNULLA VENDITA</em> con importo -0,03 e totale 0,00, poi un documento gestionale <strong>non fiscale</strong>.</div>
+      <p>La voce <strong>ANNULL.</strong> della barra Modificatori è un'altra funzione: agisce su una singola riga, non su tutta la vendita. Non usarla per abbandonare la vendita aperta.</p>
       <figure>
         <a class="zoom" href="assets/img/annulla-vendita.png"><img src="assets/img/annulla-vendita.png" width="1280" height="800" alt="Dopo l'annullamento della vendita aperta: display a zero e Documento: Chiuso." loading="lazy"></a>
         <figcaption>Esempio di vendita annullata prima di incassare. La scritta CONTANTI con importo zero non indica un nuovo incasso.</figcaption>
@@ -814,8 +864,7 @@
 <!-- ecr-assistant -->
 <link rel="stylesheet" href="assets/css/ecr-assistant.css">
 <script>window.ECR_ASSISTANT_ROOT="";</script>
-<script>window.ECR_ASSISTANT_CONFIG={localAi:true};</script>
-<script src="assets/js/ecr-local-ai.js" defer></script>
+<script>window.ECR_ASSISTANT_CONFIG={llmUrl:"https://ecr-llm.edit-servizi4u.workers.dev"};</script>
 <script src="assets/js/assistant-index.js"></script>
 <script src="assets/js/ecr-assistant.js" defer></script>
 <!-- /ecr-assistant -->
